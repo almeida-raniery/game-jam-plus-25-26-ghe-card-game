@@ -7,6 +7,6 @@ public class ResourceMultiplierModifier : ModifierBase
 
     public override void Modify()
     {
-        resourceToMultiply.ResourceQuantity = (int)(resourceToMultiply.ResourceQuantity * multiplierAmount);
+        resourceToMultiply.ModifyResourceCount((int)(resourceToMultiply.ResourceQuantity * multiplierAmount));
     }
 }
