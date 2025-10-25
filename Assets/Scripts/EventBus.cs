@@ -32,4 +32,10 @@ public static class EventBus
     {
         onAddCardsToDeckEvent?.Invoke(cardsToAdd);
     }
+
+    public static Action<ResourceData> onResourceModifiedEvent;
+    public static void ResourceModifiedEvent(ResourceData resourceData) 
+    {
+        onResourceModifiedEvent?.Invoke(resourceData);
+    }
 }

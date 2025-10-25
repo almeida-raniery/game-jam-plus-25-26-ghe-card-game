@@ -16,5 +16,6 @@ public class ResourceData : ScriptableObject
         ResourceQuantity = amount;
         if (ResourceQuantity < 0)
             ResourceQuantity = 0;
+        EventBus.ResourceModifiedEvent(this);
     }
 }
