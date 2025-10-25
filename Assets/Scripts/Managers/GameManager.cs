@@ -150,17 +150,12 @@ public class GameManager : MonoBehaviour
             modifier.Modify();
         }
 
-        // We calculate the resource score multiplier
-        foreach (var resource in levelResources)
-        {
-            resource.CalculateTotalBonus();
-        }
-
         var pointsInTurnToAdd = 0;
         // We calculate the total score
         foreach (var resource in levelResources)
         {
-            pointsInTurnToAdd += (int)(resource.ResourceBaseValue * resource.ResourceScoreMultiplier);
+            pointsInTurnToAdd += resource.CalculateTotalBonus();
+            resource.ResourceTurnBonusPoints = 0;
         }
 
         gameData.TotalScore += pointsInTurnToAdd;
