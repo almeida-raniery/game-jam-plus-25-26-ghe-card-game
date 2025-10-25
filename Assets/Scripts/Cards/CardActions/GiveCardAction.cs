@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class GiveCardAction : CardAction
 {
+    [SerializeField] GameData gameData;
+
     [Header("Resources")]
     [SerializeField]
     ResourceValueStruct[] resources;
@@ -12,6 +14,7 @@ public class GiveCardAction : CardAction
     [Header("Others")]
     [SerializeField] int cardsToGain;
     [SerializeField] ModifierBase modifierToGain;
+    [SerializeField] bool removeRandomModifier;
 
     public override void ExecuteAction()
     {
@@ -25,6 +28,13 @@ public class GiveCardAction : CardAction
 
         if (cardsToGain > 0)
             EventBus.AddCardsToDeckByNumberEvent(cardsToGain);
+
+        if (removeRandomModifier && gameData.currentModifiers.Count > 0)
+        {
+            int index = UnityEngine.Random.Range(0, gameData.currentModifiers.Count);
+            EventBus.LoseModifierEvent(gameData.currentModifiers[index]);
+            gameData.currentModifiers.RemoveAt(index);
+        }
     }
 }
 
