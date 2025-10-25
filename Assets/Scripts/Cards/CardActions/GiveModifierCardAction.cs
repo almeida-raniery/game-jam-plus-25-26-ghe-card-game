@@ -8,6 +8,6 @@ public class GiveModifierCardAction : CardAction
 
     public override void ExecuteAction()
     {
-        EventBus.GiveModifier(modifierToGive);
+        EventBus.GiveModifierEvent(modifierToGive);
     }
 }
