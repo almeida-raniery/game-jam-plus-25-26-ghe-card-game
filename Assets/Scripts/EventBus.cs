@@ -1,24 +1,53 @@
 using System;
-using UnityEngine;
+using System.Collections.Generic;
 
 public static class EventBus
 {
     public static Action onGameOverRequestedEvent;
-    public static Action onCardActionChoosenEvent;
-    public static Action<ModifierBase> onGiveModifierEvent;
-
-    public static void GameOverRequestedEvent() 
+    public static void GameOverRequestedEvent()
     {
         onGameOverRequestedEvent?.Invoke();
     }
 
-    public static void CardActionChoosen(CardAction choosenAction) 
+    public static Action<CardAction> onCardActionChoosenEvent;
+    public static void CardActionChoosenEvent(CardAction choosenAction)
     {
-        onCardActionChoosenEvent?.Invoke();
+        onCardActionChoosenEvent?.Invoke(choosenAction);
     }
 
-    public static void GiveModifier(ModifierBase modifier) 
+    public static Action<ModifierBase> onGiveModifierEvent;
+    public static void GiveModifierEvent(ModifierBase modifier)
     {
         onGiveModifierEvent?.Invoke(modifier);
+    }
+
+    public static Action<CardData> onTakeCardFromDeckEvent;
+    public static void TakeCardFromDeckEvent(CardData cardData) 
+    {
+        onTakeCardFromDeckEvent?.Invoke(cardData);
+    }
+
+    public static Action<List<CardData>> onAddCardsToDeckEvent;
+    public static void AddCardsToDeckEvent(List<CardData> cardsToAdd) 
+    {
+        onAddCardsToDeckEvent?.Invoke(cardsToAdd);
+    }
+
+    public static Action<ResourceData> onResourceModifiedEvent;
+    public static void ResourceModifiedEvent(ResourceData resourceData) 
+    {
+        onResourceModifiedEvent?.Invoke(resourceData);
+    }
+
+    public static Action onTurnInitializedEvent;
+    public static void TurnInitializedEvent() 
+    {
+        onTurnInitializedEvent?.Invoke();
+    }
+
+    public static Action onTurnEndedEvent;
+    public static void TurnEndedEvent()
+    {
+        onTurnEndedEvent?.Invoke();
     }
 }
