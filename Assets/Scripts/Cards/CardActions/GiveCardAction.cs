@@ -16,8 +16,10 @@ public class GiveCardAction : CardAction
     [SerializeField] ModifierBase modifierToGain;
     [SerializeField] bool removeRandomModifier;
 
+    [Header("Spaghetti")]
     [SerializeField] ModifierBase troyMod;
     [SerializeField] ResourceData culture;
+    [SerializeField] ModifierBase WindsMod;
     public override void ExecuteAction()
     {
         foreach (ResourceValueStruct resval in resources)
@@ -33,7 +35,12 @@ public class GiveCardAction : CardAction
             EventBus.GiveModifierEvent(modifierToGain);
 
         if (cardsToGain > 0)
-            EventBus.AddCardsToDeckByNumberEvent(cardsToGain);
+        {
+            int cardsToGainNumber = cardsToGain;
+            if (gameData.currentModifiers.Contains(WindsMod))
+                cardsToGainNumber += 1;
+            EventBus.AddCardsToDeckByNumberEvent(cardsToGainNumber);
+        }
 
         if (removeRandomModifier && gameData.currentModifiers.Count > 0)
         {
