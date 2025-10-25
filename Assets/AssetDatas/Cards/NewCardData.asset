@@ -15,7 +15,7 @@ MonoBehaviour:
   isModifierCard: 0
   cardTitle: 
   cardText: 
-  cardImage: {fileID: 0}
+  cardImage: {fileID: 4670888930079164724, guid: bb0e1a3066faae84fb853908be7446fd, type: 3}
   cardSound: {fileID: 0}
   cardLeftAction: {fileID: 0}
   cardRightAction: {fileID: 0}

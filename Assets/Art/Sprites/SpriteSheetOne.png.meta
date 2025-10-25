@@ -1,25 +1,31 @@
 fileFormatVersion: 2
-guid: bb0e1a3066faae84fb853908be7446fd
+guid: d937affbbd412ba4db06f724a644009b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7151075660978861068
-    second: SpriteSheetFase_0
+      213: -702013892854430440
+    second: SpriteSheetOne_0
   - first:
-      213: 1411232247793476882
-    second: SpriteSheetFase_1
+      213: 5613690452504595799
+    second: SpriteSheetOne_1
   - first:
-      213: 4670888930079164724
-    second: SpriteSheetFase_2
+      213: 1257480204175348803
+    second: SpriteSheetOne_2
   - first:
-      213: -3999916084150580019
-    second: SpriteSheetFase_3
+      213: -1737643353100936722
+    second: SpriteSheetOne_3
   - first:
-      213: 808733774728890421
-    second: SpriteSheetFase_4
+      213: 4273214546569975796
+    second: SpriteSheetOne_4
   - first:
-      213: 1056642809587000332
-    second: SpriteSheetFase_5
+      213: 4977804856453300608
+    second: SpriteSheetOne_5
+  - first:
+      213: -8595227192484591392
+    second: SpriteSheetOne_6
+  - first:
+      213: -3944658313908261227
+    second: SpriteSheetOne_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -128,13 +134,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BaseCardSprite
+      name: AdventureBackgroudCard
       rect:
         serializedVersion: 2
-        x: 16
-        y: 622
-        width: 857
-        height: 1408
+        x: 9
+        y: 1294
+        width: 482
+        height: 745
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -143,20 +149,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4fbc969039642cc90800000000000000
-      internalID: -7151075660978861068
+      spriteID: 815c5097512f146f0800000000000000
+      internalID: -702013892854430440
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BossCardSprite
+      name: BatleBackgroundCard
       rect:
         serializedVersion: 2
-        x: 963
-        y: 622
-        width: 857
-        height: 1409
+        x: 503
+        y: 1298
+        width: 483
+        height: 745
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -165,8 +171,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2156e499044b59310800000000000000
-      internalID: 1411232247793476882
+      spriteID: 75dc98459b5d7ed40800000000000000
+      internalID: 5613690452504595799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RelicBackgroundCard
+      rect:
+        serializedVersion: 2
+        x: 997
+        y: 1294
+        width: 483
+        height: 745
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34415f15597737110800000000000000
+      internalID: 1257480204175348803
       vertices: []
       indices: 
       edges: []
@@ -175,10 +203,10 @@ TextureImporter:
       name: FloraIcon
       rect:
         serializedVersion: 2
-        x: 21
-        y: 469
-        width: 127
-        height: 135
+        x: 9
+        y: 1142
+        width: 129
+        height: 137
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,8 +215,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4394ca60cb452d040800000000000000
-      internalID: 4670888930079164724
+      spriteID: ee99918a396a2e7e0800000000000000
+      internalID: -1737643353100936722
       vertices: []
       indices: 
       edges: []
@@ -198,9 +226,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 159
-        y: 469
-        width: 138
-        height: 135
+        y: 1142
+        width: 139
+        height: 137
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -209,8 +237,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: dcc45d093817d78c0800000000000000
-      internalID: -3999916084150580019
+      spriteID: 4f7d5595df18d4b30800000000000000
+      internalID: 4273214546569975796
       vertices: []
       indices: 
       edges: []
@@ -219,10 +247,10 @@ TextureImporter:
       name: CultureIcon
       rect:
         serializedVersion: 2
-        x: 308
-        y: 469
-        width: 138
-        height: 135
+        x: 330
+        y: 1142
+        width: 140
+        height: 137
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -231,20 +259,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 53883905513393b00800000000000000
-      internalID: 808733774728890421
+      spriteID: 0810d16b427b41540800000000000000
+      internalID: 4977804856453300608
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IndicatorArrow
+      name: ArrowIndicator
       rect:
         serializedVersion: 2
-        x: 458
-        y: 524
-        width: 70
-        height: 42
+        x: 472
+        y: 1142
+        width: 72
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -253,8 +281,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c0467e77903f9ae00800000000000000
-      internalID: 1056642809587000332
+      spriteID: 0e88d2c686e97b880800000000000000
+      internalID: -8595227192484591392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniCardIcon
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 1142
+        width: 39
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59ee437c922c149c0800000000000000
+      internalID: -3944658313908261227
       vertices: []
       indices: 
       edges: []
@@ -263,7 +313,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: c8dbd0c062272a341b4d9b9a2339182a
+    spriteID: bea7010fc78c3cb47bfed642f6b8577f
     internalID: 0
     vertices: []
     indices: 
@@ -271,16 +321,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+      entries: []
     nameFileIdTable:
-      BaseCardSprite: -7151075660978861068
-      BossCardSprite: 1411232247793476882
-      CultureIcon: 808733774728890421
-      FaunaIcon: -3999916084150580019
-      FloraIcon: 4670888930079164724
-      IndicatorArrow: 1056642809587000332
+      AdventureBackgroudCard: -702013892854430440
+      ArrowIndicator: -8595227192484591392
+      BatleBackgroundCard: 5613690452504595799
+      CultureIcon: 4977804856453300608
+      FaunaIcon: 4273214546569975796
+      FloraIcon: -1737643353100936722
+      MiniCardIcon: -3944658313908261227
+      RelicBackgroundCard: 1257480204175348803
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
