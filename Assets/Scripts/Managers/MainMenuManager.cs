@@ -6,14 +6,22 @@ using UnityEngine.UI;
 public class MainMenuManager : MonoBehaviour
 {
     [SerializeField] PlayableAsset beginGameTimeline;
+    [SerializeField] PlayableAsset AfterIntroTimeline;
     [SerializeField] PlayableDirector director;
 
     [SerializeField] Button beginGameButton;
     [SerializeField] Button creditsButton;
     [SerializeField] Button exitGameButton;
 
-    public void BeginGameSequence() 
+
+    private void Start()
     {
+        director.Play();
+    }
+
+    public void BeginGameSequence()
+    {
+        director.playableAsset = beginGameTimeline;
         director.Play();
 
         beginGameButton.interactable = false;
@@ -26,7 +34,7 @@ public class MainMenuManager : MonoBehaviour
         SceneManager.LoadScene("Game", LoadSceneMode.Single);
     }
 
-    public void ExitGame() 
+    public void ExitGame()
     {
         Application.Quit();
     }
