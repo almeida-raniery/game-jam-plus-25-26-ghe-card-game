@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: bf02ddfd2d1cbda42b592c7be477edc9
+guid: 0741fdf484a405f45840a9ebb1fae440
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 99067205437659931
-    second: cardIllustrationPhantoms 1_0
+      213: 7195588867308145888
+    second: Profeta 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: cardIllustrationPhantoms 1_0
+      name: Profeta 1_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 267
-        width: 480
-        height: 342
+        x: 55
+        y: 311
+        width: 425
+        height: 297
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b1b90053915ff5100800000000000000
-      internalID: 99067205437659931
+      spriteID: 0ec48a173fddbd360800000000000000
+      internalID: 7195588867308145888
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      cardIllustrationPhantoms 1_0: 99067205437659931
+      Profeta 1_0: 7195588867308145888
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

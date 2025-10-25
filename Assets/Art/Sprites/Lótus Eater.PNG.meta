@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: bf02ddfd2d1cbda42b592c7be477edc9
+guid: e826536712a00894b8d0e8cd106ab7ce
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 99067205437659931
-    second: cardIllustrationPhantoms 1_0
+      213: -1294803695506177598
+    second: "L\xF3tus Eater_0"
+  - first:
+      213: 1977433571007853024
+    second: "L\xF3tus Eater_1"
+  - first:
+      213: 7658908224779507579
+    second: "L\xF3tus Eater_2"
+  - first:
+      213: 1040860453347241428
+    second: "L\xF3tus Eater_3"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +122,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: cardIllustrationPhantoms 1_0
+      name: "L\xF3tus Eater_0"
       rect:
         serializedVersion: 2
-        x: 0
-        y: 267
-        width: 480
-        height: 342
+        x: 11
+        y: 325
+        width: 466
+        height: 229
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +137,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b1b90053915ff5100800000000000000
-      internalID: 99067205437659931
+      spriteID: 2c1cd7b26eee70ee0800000000000000
+      internalID: -1294803695506177598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "L\xF3tus Eater_1"
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 541
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e1fade1b51417b10800000000000000
+      internalID: 1977433571007853024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "L\xF3tus Eater_2"
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 547
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b77dc49a378e94a60800000000000000
+      internalID: 7658908224779507579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "L\xF3tus Eater_3"
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 396
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4dda38e4111e17e00800000000000000
+      internalID: 1040860453347241428
       vertices: []
       indices: 
       edges: []
@@ -148,7 +223,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      cardIllustrationPhantoms 1_0: 99067205437659931
+      "L\xF3tus Eater_0": -1294803695506177598
+      "L\xF3tus Eater_1": 1977433571007853024
+      "L\xF3tus Eater_2": 7658908224779507579
+      "L\xF3tus Eater_3": 1040860453347241428
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

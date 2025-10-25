@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: bf02ddfd2d1cbda42b592c7be477edc9
+guid: fa997956c64f21f438cc33f911480c6c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 99067205437659931
-    second: cardIllustrationPhantoms 1_0
+      213: -1230364217665900099
+    second: Circe_0
+  - first:
+      213: 2230427211970354697
+    second: Circe_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +116,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: cardIllustrationPhantoms 1_0
+      name: Circe_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 267
-        width: 480
-        height: 342
+        x: 53
+        y: 486
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +131,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b1b90053915ff5100800000000000000
-      internalID: 99067205437659931
+      spriteID: db13ca5434edceee0800000000000000
+      internalID: -1230364217665900099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circe_1
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 266
+        width: 400
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90e9bd26bb114fe10800000000000000
+      internalID: 2230427211970354697
       vertices: []
       indices: 
       edges: []
@@ -148,7 +173,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      cardIllustrationPhantoms 1_0: 99067205437659931
+      Circe_0: -1230364217665900099
+      Circe_1: 2230427211970354697
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
