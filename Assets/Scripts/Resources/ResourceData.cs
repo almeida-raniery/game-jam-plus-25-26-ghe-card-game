@@ -4,9 +4,18 @@ using UnityEngine;
 public class ResourceData : ScriptableObject
 {
     public string ResourceName;
-    public int ResourceQuantity { get; set; }
+    public int ResourceQuantity
+    {
+        get => ResourceQuantity;
+        set
+        {
+            ResourceQuantity = value;
+            if (ResourceQuantity < 0)
+                ResourceQuantity = 0;
+        }
+    }
 
-    public void ResetResource() 
+    public void ResetResource()
     {
         ResourceQuantity = 0;
     }
