@@ -25,3 +25,5 @@ MonoBehaviour:
   cardsToGain: 5
   modifierToGain: {fileID: 0}
   removeRandomModifier: 0
+  troyMod: {fileID: 11400000, guid: c32a45c4babb4344983c265183563287, type: 2}
+  culture: {fileID: 11400000, guid: 45a7525f08813354e8943662af913ba3, type: 2}

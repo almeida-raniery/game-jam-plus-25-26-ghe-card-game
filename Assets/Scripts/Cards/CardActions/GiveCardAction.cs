@@ -16,11 +16,17 @@ public class GiveCardAction : CardAction
     [SerializeField] ModifierBase modifierToGain;
     [SerializeField] bool removeRandomModifier;
 
+    [SerializeField] ModifierBase troyMod;
+    [SerializeField] ResourceData culture;
     public override void ExecuteAction()
     {
         foreach (ResourceValueStruct resval in resources)
         {
-            resval.resource.ModifyResourceCount(resval.valueToGain);
+            int valueToGain = resval.valueToGain;
+            if (gameData.currentModifiers.Contains(troyMod) && resval.resource == culture && valueToGain < 0)
+                valueToGain += 1;
+
+            resval.resource.ModifyResourceCount(valueToGain);
         }
 
         if (modifierToGain != null)

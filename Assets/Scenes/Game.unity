@@ -196,22 +196,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
   gameData: {fileID: 11400000, guid: 1edebd0dde124bd45800009611215ae4, type: 2}
   AllNormalCardsList:
-  - {fileID: 11400000, guid: 7bc6a3ba5b923a24d915b60b34ab3a54, type: 2}
-  - {fileID: 11400000, guid: 1046dc597a557ca448e78d48c4807f89, type: 2}
-  - {fileID: 11400000, guid: b1606b1b6455124418453257d5be4a59, type: 2}
-  - {fileID: 11400000, guid: 97ed6fd2bc1ef8e4b85291094f474a2f, type: 2}
+  - {fileID: 11400000, guid: f0868de182fa8e1409521d991e898fbf, type: 2}
+  - {fileID: 11400000, guid: 334e55e5d300c0e4bb1ddb324517382b, type: 2}
+  - {fileID: 11400000, guid: e944793c2469b2d4189e429119e0418b, type: 2}
+  - {fileID: 11400000, guid: 7b4f3fde962084d428f65e616028c403, type: 2}
+  - {fileID: 11400000, guid: f0868de182fa8e1409521d991e898fbf, type: 2}
+  - {fileID: 11400000, guid: 334e55e5d300c0e4bb1ddb324517382b, type: 2}
+  - {fileID: 11400000, guid: e944793c2469b2d4189e429119e0418b, type: 2}
+  - {fileID: 11400000, guid: 7b4f3fde962084d428f65e616028c403, type: 2}
+  - {fileID: 11400000, guid: 32032c5e4ecca9f4b835e261ed4e8483, type: 2}
   AllModifierCardsList:
-  - {fileID: 11400000, guid: f693b3f1746ac46499a279d57ffbddb7, type: 2}
-  - {fileID: 11400000, guid: 3ec697cbad9d3e043b7afaf34c058878, type: 2}
-  - {fileID: 11400000, guid: 76bc89e23039fd146a8887b70b294a9e, type: 2}
-  - {fileID: 11400000, guid: 745a48bcea8df544c9ad2d87de692a52, type: 2}
+  - {fileID: 11400000, guid: 32032c5e4ecca9f4b835e261ed4e8483, type: 2}
+  - {fileID: 11400000, guid: f0868de182fa8e1409521d991e898fbf, type: 2}
+  - {fileID: 11400000, guid: 334e55e5d300c0e4bb1ddb324517382b, type: 2}
+  - {fileID: 11400000, guid: e944793c2469b2d4189e429119e0418b, type: 2}
+  - {fileID: 11400000, guid: 7b4f3fde962084d428f65e616028c403, type: 2}
+  - {fileID: 11400000, guid: 32032c5e4ecca9f4b835e261ed4e8483, type: 2}
   levelResources:
   - {fileID: 11400000, guid: 45a7525f08813354e8943662af913ba3, type: 2}
   - {fileID: 11400000, guid: dd3e1199d3d71804d8e73c092bc15795, type: 2}
   - {fileID: 11400000, guid: 3f927cc46a5f0ea4bb8046e8c7167672, type: 2}
-  initialNormalCardsQuantity: 3
+  initialNormalCardsQuantity: 7
   initialModifierCardsQuantity: 3
   allowForRepetitionInCards: 1
+  lastModifierPositionInDeck: 2
 --- !u!1 &237235889
 GameObject:
   m_ObjectHideFlags: 0
