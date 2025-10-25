@@ -9,10 +9,10 @@ public static class EventBus
         onGameOverRequestedEvent?.Invoke();
     }
 
-    public static Action onCardActionChoosenEvent;
+    public static Action<CardAction> onCardActionChoosenEvent;
     public static void CardActionChoosenEvent(CardAction choosenAction)
     {
-        onCardActionChoosenEvent?.Invoke();
+        onCardActionChoosenEvent?.Invoke(choosenAction);
     }
 
     public static Action<ModifierBase> onGiveModifierEvent;

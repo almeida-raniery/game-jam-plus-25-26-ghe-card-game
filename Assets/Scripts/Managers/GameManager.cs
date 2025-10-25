@@ -1,18 +1,18 @@
+using NUnit.Framework;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    [SerializeField]
-    private List<CardData> AllCardsList;
+    // Setup
+    [SerializeField] private GameData gameData;
+    [SerializeField] private List<CardData> AllCardsList;
+    [SerializeField] private List<ResourceData> levelResources;
+    [SerializeField] private int initialDeckSize = 10;
 
-    public List<ModifierBase> currentModifiers = new List<ModifierBase>();
-    public Queue<CardData> gameCardPile = new Queue<CardData>();
-
-    [SerializeField]
-    GameData gameData;
-
-    private List<ResourceData> levelResources;
+    private CardAction turnSelectedAction;
+    private System.Random rng;
 
     private void Awake()
     {
@@ -24,27 +24,48 @@ public class GameManager : MonoBehaviour
         InitializeGame();
     }
 
-    private void SubscribeToEvents() 
+    private void SubscribeToEvents()
     {
+        EventBus.onCardActionChoosenEvent += HandleCardActionSelected;
     }
 
     private void UnsubscribeToEvents()
     {
+        EventBus.onCardActionChoosenEvent -= HandleCardActionSelected;
     }
 
-    private void InitializeGame() 
+    private void InitializeGame()
     {
-        currentModifiers.Clear();
+        gameData.currentModifiers.Clear();
+        gameData.gameCardPile.Clear();
 
         foreach (ResourceData resource in levelResources)
         {
             resource.ResetResource();
         }
+
+        // We shuffle the cards and add to the deck
+        List<CardData> tempCardList = AllCardsList;
+        rng = new System.Random();
+        tempCardList = tempCardList.OrderBy(x => rng.Next()).ToList();
+        for (int i = 0; i < initialDeckSize; i++) 
+        {
+            gameData.gameCardPile.Enqueue(tempCardList[i]);
+            
+        }
     }
 
-    public void ExecuteTurn() 
+    // Entry point for selection
+    public void HandleCardActionSelected(CardAction selectedAction)
     {
-        
+        selectedAction.ExecuteAction();
+
+        PrepareNextTurn();
+    }
+
+    public void PrepareNextTurn()
+    {
+
     }
 
     private void OnDestroy()
