@@ -15,7 +15,8 @@ MonoBehaviour:
   isModifierCard: 0
   cardTitle: RES3
   cardText: RES3
-  cardImage: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  cardImage: {fileID: 21300000, guid: 9d26126c0cbd3e148a1d8852b0830cd7, type: 3}
+  cardBackground: {fileID: 5613690452504595799, guid: d937affbbd412ba4db06f724a644009b, type: 3}
   cardSound: {fileID: 0}
   cardLeftAction: {fileID: 11400000, guid: 58082853a1e465943b87cd26a8a2d0ec, type: 2}
   cardRightAction: {fileID: 11400000, guid: c6fd78bc22abc4a4f88a8b201e89d5be, type: 2}

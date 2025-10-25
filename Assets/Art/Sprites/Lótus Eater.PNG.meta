@@ -1,25 +1,19 @@
 fileFormatVersion: 2
-guid: bb0e1a3066faae84fb853908be7446fd
+guid: e826536712a00894b8d0e8cd106ab7ce
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7151075660978861068
-    second: SpriteSheetFase_0
+      213: -1294803695506177598
+    second: "L\xF3tus Eater_0"
   - first:
-      213: 1411232247793476882
-    second: SpriteSheetFase_1
+      213: 1977433571007853024
+    second: "L\xF3tus Eater_1"
   - first:
-      213: 4670888930079164724
-    second: SpriteSheetFase_2
+      213: 7658908224779507579
+    second: "L\xF3tus Eater_2"
   - first:
-      213: -3999916084150580019
-    second: SpriteSheetFase_3
-  - first:
-      213: 808733774728890421
-    second: SpriteSheetFase_4
-  - first:
-      213: 1056642809587000332
-    second: SpriteSheetFase_5
+      213: 1040860453347241428
+    second: "L\xF3tus Eater_3"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -61,7 +55,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -128,133 +122,89 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SpriteSheetFase_0
+      name: "L\xF3tus Eater_0"
       rect:
         serializedVersion: 2
-        x: 16
-        y: 622
-        width: 857
-        height: 1408
+        x: 11
+        y: 325
+        width: 466
+        height: 229
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4fbc969039642cc90800000000000000
-      internalID: -7151075660978861068
+      spriteID: 2c1cd7b26eee70ee0800000000000000
+      internalID: -1294803695506177598
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteSheetFase_1
+      name: "L\xF3tus Eater_1"
       rect:
         serializedVersion: 2
-        x: 963
-        y: 622
-        width: 857
-        height: 1409
+        x: 136
+        y: 541
+        width: 13
+        height: 14
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2156e499044b59310800000000000000
-      internalID: 1411232247793476882
+      spriteID: 0e1fade1b51417b10800000000000000
+      internalID: 1977433571007853024
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteSheetFase_2
+      name: "L\xF3tus Eater_2"
       rect:
         serializedVersion: 2
-        x: 21
-        y: 469
-        width: 127
-        height: 135
+        x: 304
+        y: 547
+        width: 9
+        height: 9
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4394ca60cb452d040800000000000000
-      internalID: 4670888930079164724
+      spriteID: b77dc49a378e94a60800000000000000
+      internalID: 7658908224779507579
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteSheetFase_3
+      name: "L\xF3tus Eater_3"
       rect:
         serializedVersion: 2
-        x: 159
-        y: 469
-        width: 138
-        height: 135
+        x: 2
+        y: 396
+        width: 14
+        height: 14
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: dcc45d093817d78c0800000000000000
-      internalID: -3999916084150580019
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheetFase_4
-      rect:
-        serializedVersion: 2
-        x: 308
-        y: 469
-        width: 138
-        height: 135
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 53883905513393b00800000000000000
-      internalID: 808733774728890421
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheetFase_5
-      rect:
-        serializedVersion: 2
-        x: 458
-        y: 524
-        width: 70
-        height: 42
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c0467e77903f9ae00800000000000000
-      internalID: 1056642809587000332
+      spriteID: 4dda38e4111e17e00800000000000000
+      internalID: 1040860453347241428
       vertices: []
       indices: 
       edges: []
@@ -263,7 +213,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: c8dbd0c062272a341b4d9b9a2339182a
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -271,16 +221,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+      entries: []
     nameFileIdTable:
-      SpriteSheetFase_0: -7151075660978861068
-      SpriteSheetFase_1: 1411232247793476882
-      SpriteSheetFase_2: 4670888930079164724
-      SpriteSheetFase_3: -3999916084150580019
-      SpriteSheetFase_4: 808733774728890421
-      SpriteSheetFase_5: 1056642809587000332
+      "L\xF3tus Eater_0": -1294803695506177598
+      "L\xF3tus Eater_1": 1977433571007853024
+      "L\xF3tus Eater_2": 7658908224779507579
+      "L\xF3tus Eater_3": 1040860453347241428
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

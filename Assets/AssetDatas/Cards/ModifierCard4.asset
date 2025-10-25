@@ -16,6 +16,7 @@ MonoBehaviour:
   cardTitle: HHHHH
   cardText: HHHHH
   cardImage: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  cardBackground: {fileID: 1257480204175348803, guid: d937affbbd412ba4db06f724a644009b, type: 3}
   cardSound: {fileID: 0}
   cardLeftAction: {fileID: 11400000, guid: eb499eac9dbda28419dab256d317b323, type: 2}
   cardRightAction: {fileID: 11400000, guid: 67c74cd8d9712a644a6f3e2a2256a9a5, type: 2}
