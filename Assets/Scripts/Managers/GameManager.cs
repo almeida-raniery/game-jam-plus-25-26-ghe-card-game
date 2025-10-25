@@ -45,8 +45,7 @@ public class GameManager : MonoBehaviour
 
     private void InitializeGame()
     {
-        gameData.currentModifiers.Clear();
-        gameData.gameCardPile.Clear();
+        gameData.ResetGameData();
 
         foreach (ResourceData resource in levelResources)
         {
@@ -136,11 +135,35 @@ public class GameManager : MonoBehaviour
     public void HandleCardActionSelected(CardAction selectedAction)
     {
         selectedAction.ExecuteAction();
+        foreach (var resource in levelResources)
+        {
+            resource.ResourceScoreMultiplier = 0;
+        }
+        HandleTurn();
+    }
 
+    public void HandleTurn()
+    {
+        // We iterate through all our modifiers
         foreach (ModifierBase modifier in gameData.currentModifiers)
         {
             modifier.Modify();
         }
+
+        // We calculate the resource score multiplier
+        foreach (var resource in levelResources)
+        {
+            resource.CalculateTotalBonus();
+        }
+
+        var pointsInTurnToAdd = 0;
+        // We calculate the total score
+        foreach (var resource in levelResources)
+        {
+            pointsInTurnToAdd += (int)(resource.ResourceBaseValue * resource.ResourceScoreMultiplier);
+        }
+
+        gameData.TotalScore += pointsInTurnToAdd;
 
         EventBus.TurnEndedEvent();
         PrepareNextTurn();

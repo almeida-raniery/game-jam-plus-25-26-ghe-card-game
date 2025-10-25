@@ -5,6 +5,8 @@ public class ResourceData : ScriptableObject
 {
     public string ResourceName;
     public int ResourceQuantity { get; set; }
+    public int ResourceBaseValue { get; set; }
+    public float ResourceScoreMultiplier { get; set; }
 
     public void ResetResource()
     {
@@ -17,5 +19,11 @@ public class ResourceData : ScriptableObject
         if (ResourceQuantity < 0)
             ResourceQuantity = 0;
         EventBus.ResourceModifiedEvent(this);
+    }
+
+    public int CalculateTotalBonus() 
+    {
+        int finalValue = (int)(ResourceBaseValue * ResourceScoreMultiplier);
+        return finalValue;
     }
 }
