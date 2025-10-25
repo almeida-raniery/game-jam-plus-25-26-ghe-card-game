@@ -10,20 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e623f165bec243c4f96bcafab5c24043, type: 3}
-  m_Name: GiveAction
+  m_Name: ZeusSacrifeAction
   m_EditorClassIdentifier: Assembly-CSharp::GiveCardAction
-  CardActionName: 
+  CardActionName: Sacrifice yourself
   CardActionDescription: 
   gameData: {fileID: 11400000, guid: 1edebd0dde124bd45800009611215ae4, type: 2}
   resources:
   - resource: {fileID: 11400000, guid: dd3e1199d3d71804d8e73c092bc15795, type: 2}
-    valueToGain: 0
+    valueToGain: 3
   - resource: {fileID: 11400000, guid: 45a7525f08813354e8943662af913ba3, type: 2}
-    valueToGain: 0
+    valueToGain: 3
   - resource: {fileID: 11400000, guid: 3f927cc46a5f0ea4bb8046e8c7167672, type: 2}
-    valueToGain: 0
+    valueToGain: 3
   cardsToGain: 0
   modifierToGain: {fileID: 0}
-  removeRandomModifier: 0
+  removeRandomModifier: 1
   troyMod: {fileID: 11400000, guid: c32a45c4babb4344983c265183563287, type: 2}
   culture: {fileID: 11400000, guid: 45a7525f08813354e8943662af913ba3, type: 2}

@@ -17,7 +17,7 @@ public class ResourceData : ScriptableObject
 
     public void ModifyResourceCount(int amount)
     {
-        ResourceQuantity = amount;
+        ResourceQuantity += amount;
         if (ResourceQuantity < 0)
             ResourceQuantity = 0;
         LastAmountAddedToResource = amount;
