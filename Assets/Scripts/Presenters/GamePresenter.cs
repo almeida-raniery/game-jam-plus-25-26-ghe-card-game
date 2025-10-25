@@ -7,6 +7,7 @@ public class GamePresenter : MonoBehaviour
     [SerializeField] TextMeshProUGUI resource2QuantityText;
     [SerializeField] TextMeshProUGUI resource3QuantityText;
     [SerializeField] TextMeshProUGUI cardsInDeckText;
+    [SerializeField] TextMeshProUGUI modsQuantityText;
 
     [SerializeField] ResourceData resource1Data;
     [SerializeField] ResourceData resource2Data;
@@ -30,6 +31,8 @@ public class GamePresenter : MonoBehaviour
         resource1QuantityText.text = resource1Data.ResourceQuantity.ToString();
         resource2QuantityText.text = resource2Data.ResourceQuantity.ToString();
         resource3QuantityText.text = resource3Data.ResourceQuantity.ToString();
+
+        modsQuantityText.text = gameData.currentModifiers.Count.ToString();
 
         cardsInDeckText.text = gameData.gameCardPile.Count.ToString();
     }
