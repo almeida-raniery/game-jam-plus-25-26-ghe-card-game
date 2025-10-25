@@ -1,4 +1,3 @@
-using NUnit.Framework;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -6,12 +5,16 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     // Setup
+    [Header("Setup")]
     [SerializeField] private GameData gameData;
     [SerializeField] private List<CardData> AllCardsList;
     [SerializeField] private List<ResourceData> levelResources;
-    [SerializeField] private int initialDeckSize = 10;
 
-    private CardAction turnSelectedAction;
+    // Options
+    [Header("Game Options")]
+    [SerializeField] private int initialDeckSize = 10;
+    [SerializeField] private bool allowForRepetitioninCards = true;
+
     private System.Random rng;
 
     private void Awake()
@@ -50,10 +53,12 @@ public class GameManager : MonoBehaviour
         List<CardData> tempCardList = AllCardsList;
         rng = new System.Random();
         tempCardList = tempCardList.OrderBy(x => rng.Next()).ToList();
-        for (int i = 0; i < initialDeckSize; i++) 
+        for (int i = 0; i < initialDeckSize; i++)
         {
             gameData.gameCardPile.Enqueue(tempCardList[i]);
         }
+        if (!allowForRepetitioninCards)
+            tempCardList.RemoveRange(0, initialDeckSize);
 
         EventBus.TakeCardFromDeckEvent(gameData.gameCardPile.Dequeue());
     }
@@ -68,13 +73,22 @@ public class GameManager : MonoBehaviour
 
     public void PrepareNextTurn()
     {
-        EventBus.TakeCardFromDeckEvent(gameData.gameCardPile.Dequeue());
+        // If there are still cards on the pile
+        if (gameData.gameCardPile.Count > 0)
+            EventBus.TakeCardFromDeckEvent(gameData.gameCardPile.Dequeue());
+        else
+            HandleGameOver();
     }
 
-    public void GiveModifierToPlayer(ModifierBase modifierToGive) 
+    public void GiveModifierToPlayer(ModifierBase modifierToGive)
     {
         gameData.currentModifiers.Add(modifierToGive);
         print("Gave Player modifier: " + modifierToGive.ModifierName);
+    }
+
+    public void HandleGameOver()
+    {
+        EventBus.GameOverRequestedEvent();
     }
 
     private void OnDestroy()
