@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89f95999b0295504896b5c62b401de87, type: 3}
+  m_Name: ResourceGainHalfFloraFaunaModifier
+  m_EditorClassIdentifier: Assembly-CSharp::ResourceGainHalfFromOtherModifier
+  ModifierName: AAA
+  ModifierDescription: XXX
+  resourceToAddTo: {fileID: 11400000, guid: 3f927cc46a5f0ea4bb8046e8c7167672, type: 2}
+  resourceToGainHalfFrom: {fileID: 11400000, guid: dd3e1199d3d71804d8e73c092bc15795, type: 2}

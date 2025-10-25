@@ -150,17 +150,12 @@ public class GameManager : MonoBehaviour
             modifier.Modify();
         }
 
-        // We calculate the resource score multiplier
-        foreach (var resource in levelResources)
-        {
-            resource.CalculateTotalBonus();
-        }
-
         var pointsInTurnToAdd = 0;
         // We calculate the total score
         foreach (var resource in levelResources)
         {
-            pointsInTurnToAdd += (int)(resource.ResourceBaseValue * resource.ResourceScoreMultiplier);
+            pointsInTurnToAdd += resource.CalculateTotalBonus();
+            resource.ResourceTurnBonusPoints = 0;
         }
 
         gameData.TotalScore += pointsInTurnToAdd;
@@ -183,6 +178,16 @@ public class GameManager : MonoBehaviour
     {
         gameData.currentModifiers.Add(modifierToGive);
         print("Gave Player modifier: " + modifierToGive.ModifierName);
+    }
+
+    public void RemoveRandomModifier()
+    {
+        if (gameData.currentModifiers.Count > 0)
+        {
+            var index = Random.Range(0, gameData.currentModifiers.Count);
+            EventBus.onLoseModifierEvent(gameData.currentModifiers[index]);
+            gameData.currentModifiers.RemoveAt(index);
+        }
     }
 
     public void HandleGameOver()

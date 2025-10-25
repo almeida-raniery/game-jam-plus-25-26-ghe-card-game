@@ -7,6 +7,7 @@ public class CardData : ScriptableObject
     public string cardTitle;
     public string cardText;
     public Sprite cardImage;
+    public Sprite cardBackground;
     public AudioClip cardSound;
 
     public CardAction cardLeftAction;

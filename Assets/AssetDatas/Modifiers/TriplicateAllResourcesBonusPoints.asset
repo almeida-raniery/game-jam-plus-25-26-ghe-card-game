@@ -10,7 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8f24f892b3c3fe1498956c065ccb838f, type: 3}
-  m_Name: TestModifier
+  m_Name: TriplicateAllResourcesBonusPoints
   m_EditorClassIdentifier: Assembly-CSharp::TestModifier
-  ModifierName: More Big
-  ModifierDescription: More Good
+  ModifierName: Triplicate All
+  ModifierDescription: XXX
+  resourceList:
+  - {fileID: 11400000, guid: 45a7525f08813354e8943662af913ba3, type: 2}
+  - {fileID: 11400000, guid: dd3e1199d3d71804d8e73c092bc15795, type: 2}
+  - {fileID: 11400000, guid: 3f927cc46a5f0ea4bb8046e8c7167672, type: 2}
+  multiplierAmount: 3

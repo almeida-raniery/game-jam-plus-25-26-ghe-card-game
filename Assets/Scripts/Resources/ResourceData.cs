@@ -7,6 +7,8 @@ public class ResourceData : ScriptableObject
     public int ResourceQuantity { get; set; }
     public int ResourceBaseValue { get; set; }
     public float ResourceScoreMultiplier { get; set; }
+    public int ResourceTurnBonusPoints { get; set; }
+    public int LastAmountAddedToResource { get; set; }
 
     public void ResetResource()
     {
@@ -18,12 +20,13 @@ public class ResourceData : ScriptableObject
         ResourceQuantity = amount;
         if (ResourceQuantity < 0)
             ResourceQuantity = 0;
+        LastAmountAddedToResource = amount;
         EventBus.ResourceModifiedEvent(this);
     }
 
-    public int CalculateTotalBonus() 
+    public int CalculateTotalBonus()
     {
-        int finalValue = (int)(ResourceBaseValue * ResourceScoreMultiplier);
+        int finalValue = (int)((ResourceBaseValue + ResourceTurnBonusPoints) * ResourceScoreMultiplier);
         return finalValue;
     }
 }
