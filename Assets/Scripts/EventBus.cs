@@ -22,25 +22,31 @@ public static class EventBus
     }
 
     public static Action<CardData> onTakeCardFromDeckEvent;
-    public static void TakeCardFromDeckEvent(CardData cardData) 
+    public static void TakeCardFromDeckEvent(CardData cardData)
     {
         onTakeCardFromDeckEvent?.Invoke(cardData);
     }
 
     public static Action<List<CardData>> onAddCardsToDeckEvent;
-    public static void AddCardsToDeckEvent(List<CardData> cardsToAdd) 
+    public static void AddCardsToDeckEvent(List<CardData> cardsToAdd)
     {
         onAddCardsToDeckEvent?.Invoke(cardsToAdd);
     }
 
     public static Action<ResourceData> onResourceModifiedEvent;
-    public static void ResourceModifiedEvent(ResourceData resourceData) 
+    public static void ResourceModifiedEvent(ResourceData resourceData)
     {
         onResourceModifiedEvent?.Invoke(resourceData);
     }
 
+    public static Action<ModifierBase> onLoseModifierEvent;
+    public static void LoseModifierEvent(ModifierBase mod)
+    {
+        onLoseModifierEvent?.Invoke(mod);
+    }
+
     public static Action onTurnInitializedEvent;
-    public static void TurnInitializedEvent() 
+    public static void TurnInitializedEvent()
     {
         onTurnInitializedEvent?.Invoke();
     }

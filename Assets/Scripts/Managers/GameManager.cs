@@ -180,6 +180,16 @@ public class GameManager : MonoBehaviour
         print("Gave Player modifier: " + modifierToGive.ModifierName);
     }
 
+    public void RemoveRandomModifier()
+    {
+        if (gameData.currentModifiers.Count > 0)
+        {
+            var index = Random.Range(0, gameData.currentModifiers.Count);
+            EventBus.onLoseModifierEvent(gameData.currentModifiers[index]);
+            gameData.currentModifiers.RemoveAt(index);
+        }
+    }
+
     public void HandleGameOver()
     {
         EventBus.GameOverRequestedEvent();
