@@ -7,15 +7,18 @@ public class GameManager : MonoBehaviour
     // Setup
     [Header("Setup")]
     [SerializeField] private GameData gameData;
-    [SerializeField] private List<CardData> AllCardsList;
+    [SerializeField] private List<CardData> AllNormalCardsList;
+    [SerializeField] private List<CardData> AllModifierCardsList;
     [SerializeField] private List<ResourceData> levelResources;
 
     // Options
     [Header("Game Options")]
-    [SerializeField] private int initialDeckSize = 10;
+    [SerializeField] private int initialNormalCardsQuantity = 7;
+    [SerializeField] private int initialModifierCardsQuantity = 3;
     [SerializeField] private bool allowForRepetitioninCards = true;
 
     private System.Random rng;
+    List<CardData> tempAllCardList;
 
     private void Awake()
     {
@@ -50,23 +53,87 @@ public class GameManager : MonoBehaviour
         }
 
         // We shuffle the cards and add to the deck
-        List<CardData> tempCardList = AllCardsList;
-        rng = new System.Random();
-        tempCardList = tempCardList.OrderBy(x => rng.Next()).ToList();
-        for (int i = 0; i < initialDeckSize; i++)
+        CreateTheDeck();
+
+        // We set the Deck
+        foreach (var card in tempAllCardList)
         {
-            gameData.gameCardPile.Enqueue(tempCardList[i]);
+            gameData.gameCardPile.Enqueue(card);
         }
+
         if (!allowForRepetitioninCards)
-            tempCardList.RemoveRange(0, initialDeckSize);
+            tempAllCardList.RemoveRange(0, initialNormalCardsQuantity);
 
         EventBus.TakeCardFromDeckEvent(gameData.gameCardPile.Dequeue());
+    }
+
+    public void AddMoreCardsToDeck(int quantityToAdd)
+    {
+        // We cant add more cards than it exists
+        if (AllNormalCardsList.Count + AllModifierCardsList.Count < quantityToAdd)
+            return;
+
+        if (tempAllCardList.Count >= quantityToAdd)
+        {
+            for (int i = 0; i < quantityToAdd; i++)
+            {
+                // we add if the card is not a modifier card
+                if (!tempAllCardList[quantityToAdd - 1].isModifierCard)
+                {
+                    gameData.gameCardPile.Enqueue(tempAllCardList[i]);
+                }
+                // if it is, we just take from the normal pile
+                else
+                {
+                    gameData.gameCardPile.Enqueue(AllNormalCardsList[Random.Range(0, AllNormalCardsList.Count)]);
+                }
+            }
+        }
+        else
+        {
+            CreateTheDeck();
+            AddMoreCardsToDeck(quantityToAdd); // TODO: TEST FOR RECURSION
+        }
+    }
+
+    public void CreateTheDeck()
+    {
+        // We shuffle the cards and add to the deck
+        List<CardData> tempNormalCardList = AllNormalCardsList;
+        List<CardData> tempModCardList = AllModifierCardsList;
+        tempAllCardList = new();
+        rng = new System.Random();
+        tempNormalCardList = tempNormalCardList.OrderBy(x => rng.Next()).ToList();
+        tempModCardList = tempModCardList.OrderBy(x => rng.Next()).ToList();
+
+        // We add the mod cards
+        for (int j = 0; j < initialModifierCardsQuantity; j++)
+        {
+            tempAllCardList.Add(tempModCardList[j]);
+        }
+
+        // We add the normal cards, minus the top one
+        for (int i = 0; i < initialNormalCardsQuantity - 1; i++)
+        {
+            tempAllCardList.Add(tempNormalCardList[i]);
+        }
+
+        // We reshufle the pile
+        tempAllCardList = tempAllCardList.OrderBy(x => rng.Next()).ToList();
+
+        // We add the final card, wich must always be normal
+        tempAllCardList.Add(tempNormalCardList[^1]);
     }
 
     // Entry point for selection
     public void HandleCardActionSelected(CardAction selectedAction)
     {
         selectedAction.ExecuteAction();
+
+        foreach (ModifierBase modifier in gameData.currentModifiers)
+        {
+            modifier.Modify();
+        }
 
         PrepareNextTurn();
     }

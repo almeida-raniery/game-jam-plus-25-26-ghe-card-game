@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 280ad01d3d0dbdd4da908fd510c74af9, type: 3}
-  m_Name: TestCardData 3
+  m_Name: ModifierCard2
   m_EditorClassIdentifier: Assembly-CSharp::CardData
-  cardTitle: RRRRR
-  cardText: RRRRRR
+  isModifierCard: 1
+  cardTitle: VVVVV
+  cardText: VVVVV
   cardImage: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
   cardSound: {fileID: 0}
   cardLeftAction: {fileID: 11400000, guid: eb499eac9dbda28419dab256d317b323, type: 2}

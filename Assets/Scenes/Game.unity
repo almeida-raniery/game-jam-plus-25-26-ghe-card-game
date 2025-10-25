@@ -195,9 +195,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
   gameData: {fileID: 11400000, guid: 1edebd0dde124bd45800009611215ae4, type: 2}
-  AllCardsList:
-  - {fileID: 11400000, guid: f693b3f1746ac46499a279d57ffbddb7, type: 2}
+  AllNormalCardsList:
   - {fileID: 11400000, guid: 7bc6a3ba5b923a24d915b60b34ab3a54, type: 2}
+  - {fileID: 11400000, guid: 1046dc597a557ca448e78d48c4807f89, type: 2}
+  - {fileID: 11400000, guid: b1606b1b6455124418453257d5be4a59, type: 2}
+  - {fileID: 11400000, guid: 97ed6fd2bc1ef8e4b85291094f474a2f, type: 2}
+  AllModifierCardsList:
+  - {fileID: 11400000, guid: f693b3f1746ac46499a279d57ffbddb7, type: 2}
   - {fileID: 11400000, guid: 3ec697cbad9d3e043b7afaf34c058878, type: 2}
   - {fileID: 11400000, guid: 76bc89e23039fd146a8887b70b294a9e, type: 2}
   - {fileID: 11400000, guid: 745a48bcea8df544c9ad2d87de692a52, type: 2}
@@ -205,7 +209,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 45a7525f08813354e8943662af913ba3, type: 2}
   - {fileID: 11400000, guid: dd3e1199d3d71804d8e73c092bc15795, type: 2}
   - {fileID: 11400000, guid: 3f927cc46a5f0ea4bb8046e8c7167672, type: 2}
-  initialDeckSize: 3
+  initialNormalCardsQuantity: 3
+  initialModifierCardsQuantity: 3
   allowForRepetitioninCards: 0
 --- !u!1 &237235889
 GameObject:
