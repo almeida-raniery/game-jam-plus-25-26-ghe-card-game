@@ -27,11 +27,13 @@ public class GameManager : MonoBehaviour
     private void SubscribeToEvents()
     {
         EventBus.onCardActionChoosenEvent += HandleCardActionSelected;
+        EventBus.onGiveModifierEvent += GiveModifierToPlayer;
     }
 
     private void UnsubscribeToEvents()
     {
         EventBus.onCardActionChoosenEvent -= HandleCardActionSelected;
+        EventBus.onGiveModifierEvent -= GiveModifierToPlayer;
     }
 
     private void InitializeGame()
@@ -51,8 +53,9 @@ public class GameManager : MonoBehaviour
         for (int i = 0; i < initialDeckSize; i++) 
         {
             gameData.gameCardPile.Enqueue(tempCardList[i]);
-            
         }
+
+        EventBus.TakeCardFromDeckEvent(gameData.gameCardPile.Dequeue());
     }
 
     // Entry point for selection
@@ -65,7 +68,13 @@ public class GameManager : MonoBehaviour
 
     public void PrepareNextTurn()
     {
+        EventBus.TakeCardFromDeckEvent(gameData.gameCardPile.Dequeue());
+    }
 
+    public void GiveModifierToPlayer(ModifierBase modifierToGive) 
+    {
+        gameData.currentModifiers.Add(modifierToGive);
+        print("Gave Player modifier: " + modifierToGive.ModifierName);
     }
 
     private void OnDestroy()
