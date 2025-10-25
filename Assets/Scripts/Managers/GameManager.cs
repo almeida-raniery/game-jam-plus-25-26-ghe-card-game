@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private int initialNormalCardsQuantity = 7;
     [SerializeField] private int initialModifierCardsQuantity = 3;
     [SerializeField] private bool allowForRepetitionInCards = true;
+    [SerializeField] private int lastModifierPositionInDeck = 2;
 
     private System.Random rng;
     List<CardData> tempAllCardList;
@@ -107,13 +108,13 @@ public class GameManager : MonoBehaviour
         tempModCardList = tempModCardList.OrderBy(x => rng.Next()).ToList();
 
         // We add the mod cards
-        for (int j = 0; j < initialModifierCardsQuantity; j++)
+        for (int j = 0; j < initialModifierCardsQuantity - 1; j++)
         {
             tempAllCardList.Add(tempModCardList[j]);
         }
 
         // We add the normal cards, minus the top one
-        for (int i = 0; i < initialNormalCardsQuantity - 1; i++)
+        for (int i = 0; i < initialNormalCardsQuantity - lastModifierPositionInDeck; i++)
         {
             tempAllCardList.Add(tempNormalCardList[i]);
         }
@@ -121,8 +122,14 @@ public class GameManager : MonoBehaviour
         // We reshufle the pile
         tempAllCardList = tempAllCardList.OrderBy(x => rng.Next()).ToList();
 
-        // We add the final card, wich must always be normal
-        tempAllCardList.Add(tempNormalCardList[^1]);
+        tempAllCardList.Add(tempModCardList[^1]);
+
+        // We add the final cards, wich must always be normal
+        for (int i = 1; i < lastModifierPositionInDeck + 1; i++)
+        {
+
+            tempAllCardList.Add(tempNormalCardList[^i]);
+        }
     }
 
     // Entry point for selection
