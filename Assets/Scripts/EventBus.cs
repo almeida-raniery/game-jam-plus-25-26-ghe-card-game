@@ -38,4 +38,16 @@ public static class EventBus
     {
         onResourceModifiedEvent?.Invoke(resourceData);
     }
+
+    public static Action onTurnInitializedEvent;
+    public static void TurnInitializedEvent() 
+    {
+        onTurnInitializedEvent?.Invoke();
+    }
+
+    public static Action onTurnEndedEvent;
+    public static void TurnEndedEvent()
+    {
+        onTurnEndedEvent?.Invoke();
+    }
 }

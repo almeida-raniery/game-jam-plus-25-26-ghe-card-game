@@ -15,7 +15,7 @@ public class GameManager : MonoBehaviour
     [Header("Game Options")]
     [SerializeField] private int initialNormalCardsQuantity = 7;
     [SerializeField] private int initialModifierCardsQuantity = 3;
-    [SerializeField] private bool allowForRepetitioninCards = true;
+    [SerializeField] private bool allowForRepetitionInCards = true;
 
     private System.Random rng;
     List<CardData> tempAllCardList;
@@ -61,8 +61,8 @@ public class GameManager : MonoBehaviour
             gameData.gameCardPile.Enqueue(card);
         }
 
-        if (!allowForRepetitioninCards)
-            tempAllCardList.RemoveRange(0, initialNormalCardsQuantity);
+        if (!allowForRepetitionInCards)
+            tempAllCardList.RemoveRange(0, initialNormalCardsQuantity + initialModifierCardsQuantity);
 
         EventBus.TakeCardFromDeckEvent(gameData.gameCardPile.Dequeue());
     }
@@ -135,11 +135,13 @@ public class GameManager : MonoBehaviour
             modifier.Modify();
         }
 
+        EventBus.TurnEndedEvent();
         PrepareNextTurn();
     }
 
     public void PrepareNextTurn()
     {
+        EventBus.TurnInitializedEvent();
         // If there are still cards on the pile
         if (gameData.gameCardPile.Count > 0)
             EventBus.TakeCardFromDeckEvent(gameData.gameCardPile.Dequeue());
