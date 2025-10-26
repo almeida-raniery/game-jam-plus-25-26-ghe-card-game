@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GiveCardAction
   CardActionName: Save Livestock
   CardActionDescription: Save the Livestock
+  GiveCardAction: {fileID: 11400000}
   gameData: {fileID: 11400000, guid: 1edebd0dde124bd45800009611215ae4, type: 2}
   resources:
   - resource: {fileID: 11400000, guid: dd3e1199d3d71804d8e73c092bc15795, type: 2}
