@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 017d29f6b2fe9614cae2df96e9b8eb0e, type: 3}
   m_Name: WindsModifier
   m_EditorClassIdentifier: Assembly-CSharp::WindsModifier
-  ModifierName: 
-  ModifierDescription: 
+  ModifierName: bag of the four winds
+  ModifierDescription: Every time you would gain cards as a result of a choice, gain
+    1 extra card.
   icon: {fileID: 21300000, guid: 13c361b6f2f62794a9d239873dddd237, type: 3}
