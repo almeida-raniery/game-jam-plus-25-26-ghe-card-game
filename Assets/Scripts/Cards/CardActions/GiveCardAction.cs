@@ -8,18 +8,17 @@ public class GiveCardAction : CardAction
     [SerializeField] GameData gameData;
 
     [Header("Resources")]
-    [SerializeField]
-    ResourceValueStruct[] resources;
+    public ResourceValueStruct[] resources;
 
     [Header("Others")]
-    [SerializeField] int cardsToGain;
-    [SerializeField] ModifierBase modifierToGain;
-    [SerializeField] bool removeRandomModifier;
+    public int cardsToGain;
+    public ModifierBase modifierToGain;
+    public bool removeRandomModifier;
 
     [Header("Spaghetti")]
-    [SerializeField] ModifierBase troyMod;
-    [SerializeField] ResourceData culture;
-    [SerializeField] ModifierBase WindsMod;
+    public ModifierBase troyMod;
+    public ResourceData culture;
+    public ModifierBase WindsMod;
     public override void ExecuteAction()
     {
         foreach (ResourceValueStruct resval in resources)
@@ -51,8 +50,9 @@ public class GiveCardAction : CardAction
     }
 }
 
+
 [Serializable]
-struct ResourceValueStruct
+public struct ResourceValueStruct
 {
     public ResourceData resource;
     public int valueToGain;

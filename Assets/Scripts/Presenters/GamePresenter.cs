@@ -56,6 +56,9 @@ public class GamePresenter : MonoBehaviour
     {
         EventBus.onResourceModifiedEvent -= UpdateResources;
         EventBus.onTurnEndedEvent -= UpdateGameUI;
+        EventBus.onTurnInitializedEvent -= UpdateGameUI;
+        EventBus.onGameInitializedEvent -= UpdateGameUI;
+        EventBus.onGameOverRequestedEvent -= SetupEndingScreen;
     }
 
     public void OnModIconClicked(int modIndex)
@@ -63,9 +66,6 @@ public class GamePresenter : MonoBehaviour
         modDisplayTitleText.text = gameData.currentModifiers[modIndex].ModifierName;
         modDisplayDescriptionText.text = gameData.currentModifiers[modIndex].ModifierDescription;
         modDisplayPannel.gameObject.SetActive(true);
-        EventBus.onTurnInitializedEvent -= UpdateGameUI;
-        EventBus.onGameOverRequestedEvent -= SetupEndingScreen;
-        EventBus.onGameInitializedEvent -= UpdateGameUI;
     }
 
     public void UpdateGameUI() 
@@ -74,19 +74,14 @@ public class GamePresenter : MonoBehaviour
         resource2QuantityText.text = resource2Data.ResourceQuantity.ToString();
         resource3QuantityText.text = resource3Data.ResourceQuantity.ToString();
 
-        for (int i = 0; i < gameData.currentModifiers.Count; i++)
-        {
-            Image icon = modSlots[i].GetComponentsInChildren<Image>()[1];
 
-            icon.sprite = gameData.currentModifiers[i].icon;
-            icon.enabled = true;
-        }
+        UpdateModifierIcons();
 
         scoreLabel.text = gameData.TotalScore.ToString();
         cardsInDeckText.text = gameData.gameCardPile.Count.ToString();
     }
 
-    private void SetupEndingScreen(Constants.EndType endType) 
+    private void SetupEndingScreen(Constants.EndType endType)
     {
         gameOverScreen.SetActive(true);
 
@@ -115,6 +110,20 @@ public class GamePresenter : MonoBehaviour
                 break;
             default:
                 break;
+        }
+    }
+    
+    private void UpdateModifierIcons()
+    {
+        foreach (Image slot in modSlots)
+            slot.GetComponentsInChildren<Image>()[1].enabled = false;
+
+        for (int i = 0; i < gameData.currentModifiers.Count; i++)
+        {
+            Image icon = modSlots[i].GetComponentsInChildren<Image>()[1];
+
+            icon.sprite = gameData.currentModifiers[i].icon;
+            icon.enabled = true;
         }
     }
 
