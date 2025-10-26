@@ -59,11 +59,11 @@ public class CardPresenter : MonoBehaviour
             {
                 if (resval.resource == faunaResource)
                 {
-                    leftActionFloraGainText.text = getAddSymbol(resval.valueToGain);
+                    leftActionFaunaGainText.text = getAddSymbol(resval.valueToGain);
                 }
                 else if (resval.resource == floraResource)
                 {
-                    leftActionFaunaGainText.text = getAddSymbol(resval.valueToGain);
+                    leftActionFloraGainText.text = getAddSymbol(resval.valueToGain);
                 }
                 else if (resval.resource == cultureResource)
                 {
@@ -95,11 +95,11 @@ public class CardPresenter : MonoBehaviour
             {
                 if (resval.resource == faunaResource)
                 {
-                    rightActionFloraGainText.text = getAddSymbol(resval.valueToGain);
+                    rightActionFaunaGainText.text = getAddSymbol(resval.valueToGain);
                 }
                 else if (resval.resource == floraResource)
                 {
-                    rightActionFaunaGainText.text = getAddSymbol(resval.valueToGain);
+                    rightActionFloraGainText.text = getAddSymbol(resval.valueToGain);
                 }
                 else if (resval.resource == cultureResource)
                 {
