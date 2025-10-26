@@ -15,8 +15,8 @@ MonoBehaviour:
   isModifierCard: 0
   cardTitle: Mandrake
   cardText: A field of screaming voracious plants stands before you
-  cardImage: {fileID: 21300000, guid: fad4f9a0c1df3f24184038497e41260c, type: 3}
-  cardBackground: {fileID: 5613690452504595799, guid: d937affbbd412ba4db06f724a644009b, type: 3}
+  cardImage: {fileID: 21300000, guid: 499d17424936c4445a8f9d789a838c87, type: 3}
+  cardBackground: {fileID: -7532609294062043228, guid: 317156161370a2345b1eee871ba37733, type: 3}
   cardSound: {fileID: 0}
   cardLeftAction: {fileID: 11400000, guid: b95f64859c84dde40b792eca652ecbab, type: 2}
   cardRightAction: {fileID: 11400000, guid: 178a69127ee69cc45941243703242e7c, type: 2}

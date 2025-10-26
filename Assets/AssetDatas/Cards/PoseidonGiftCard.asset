@@ -16,7 +16,7 @@ MonoBehaviour:
   cardTitle: Poseidon's Bounty
   cardText: The ocean reveals it's secret bounty to you
   cardImage: {fileID: 21300000, guid: ed4ac371d5088484da71a39f2bb3e42c, type: 3}
-  cardBackground: {fileID: 1257480204175348803, guid: d937affbbd412ba4db06f724a644009b, type: 3}
+  cardBackground: {fileID: -7532609294062043228, guid: 317156161370a2345b1eee871ba37733, type: 3}
   cardSound: {fileID: 0}
   cardLeftAction: {fileID: 11400000, guid: 8bc5d7cc0d44ae74287b4fba16369e44, type: 2}
   cardRightAction: {fileID: 11400000, guid: 6484865c027b9604d93a6075aafe8a77, type: 2}

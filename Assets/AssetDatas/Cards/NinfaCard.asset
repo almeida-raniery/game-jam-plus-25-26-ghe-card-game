@@ -15,8 +15,8 @@ MonoBehaviour:
   isModifierCard: 0
   cardTitle: Nimph
   cardText: A lady of the river offers riches in exchange for your memories
-  cardImage: {fileID: 21300000, guid: 47421310567b6c642a8653eaf1e43465, type: 3}
-  cardBackground: {fileID: 5613690452504595799, guid: d937affbbd412ba4db06f724a644009b, type: 3}
+  cardImage: {fileID: 21300000, guid: 02b4d7b799a96104584a7c2ed5a5415a, type: 3}
+  cardBackground: {fileID: -7532609294062043228, guid: 317156161370a2345b1eee871ba37733, type: 3}
   cardSound: {fileID: 0}
   cardLeftAction: {fileID: 11400000, guid: da2288962d3f7dc46a026ca2618c9e60, type: 2}
   cardRightAction: {fileID: 11400000, guid: a5d5faf2db629b74a9de491f66bb685f, type: 2}

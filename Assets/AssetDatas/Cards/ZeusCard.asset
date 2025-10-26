@@ -15,8 +15,8 @@ MonoBehaviour:
   isModifierCard: 0
   cardTitle: Zeus's test
   cardText: Humble yourself before the god of gods, or suffer the consequences.
-  cardImage: {fileID: 21300000, guid: ed4ac371d5088484da71a39f2bb3e42c, type: 3}
-  cardBackground: {fileID: -702013892854430440, guid: d937affbbd412ba4db06f724a644009b, type: 3}
+  cardImage: {fileID: 21300000, guid: a30b41cccbd88d744813cc9d558bbd9e, type: 3}
+  cardBackground: {fileID: -7532609294062043228, guid: 317156161370a2345b1eee871ba37733, type: 3}
   cardSound: {fileID: 0}
   cardLeftAction: {fileID: 11400000, guid: b0d02de5b00e4bb4fbb95a34c2c6d722, type: 2}
   cardRightAction: {fileID: 11400000, guid: 3a6fa82668017e54e88924d9af8f97fd, type: 2}

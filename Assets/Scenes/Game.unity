@@ -881,7 +881,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 5613690452504595799, guid: d937affbbd412ba4db06f724a644009b, type: 3}
+  m_Sprite: {fileID: -7532609294062043228, guid: 317156161370a2345b1eee871ba37733, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1310,10 +1310,10 @@ MonoBehaviour:
   gameOverResource1QuantityText: {fileID: 961631101}
   gameOverResource2QuantityText: {fileID: 2036889851}
   gameOverResource3QuantityText: {fileID: 916646603}
-  floraEndingSprite: {fileID: 0}
-  cultureEndingSprite: {fileID: 0}
-  faunaEndingSprite: {fileID: 0}
-  allEndingSprite: {fileID: 0}
+  floraEndingSprite: {fileID: 21300000, guid: 874aab7a6b9b1c24db14b724a31d93b6, type: 3}
+  cultureEndingSprite: {fileID: 4760443454045671111, guid: 151e5cfd852697b4d9fe9fdfdd931a0a, type: 3}
+  faunaEndingSprite: {fileID: -4217181621919404157, guid: 3d407ec5630abf4488e9efe56d345b44, type: 3}
+  allEndingSprite: {fileID: 7020673467554907748, guid: 07fa25103392b2849b6957c4389118d5, type: 3}
   floraEndingText: Flora End
   cultureEndingText: Culture End
   faunaEndingText: Fauna End
@@ -4885,14 +4885,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.20754719, g: 0.10299039, b: 0.17977624, a: 0.7372549}
+  m_Color: {r: 0, g: 0.15009478, b: 0.20754719, a: 0.69803923}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 0}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5467,7 +5467,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 0}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5776,7 +5776,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.81886786, g: 0.5287549, b: 0.3878034, a: 0}
+  m_BackGroundColor: {r: 1, g: 1, b: 1, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
