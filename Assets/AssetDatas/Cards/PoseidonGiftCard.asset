@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 280ad01d3d0dbdd4da908fd510c74af9, type: 3}
+  m_Name: PoseidonGiftCard
+  m_EditorClassIdentifier: Assembly-CSharp::CardData
+  isModifierCard: 0
+  cardTitle: Poseidon's Bounty
+  cardText: The ocean reveals it's secret bounty to you
+  cardImage: {fileID: 0}
+  cardBackground: {fileID: 1257480204175348803, guid: d937affbbd412ba4db06f724a644009b, type: 3}
+  cardSound: {fileID: 0}
+  cardLeftAction: {fileID: 11400000, guid: 604cb4a1f971be34786dfc8e9031de15, type: 2}
+  cardRightAction: {fileID: 11400000, guid: dc67fd23ea40e15478bc5107f04e33bf, type: 2}

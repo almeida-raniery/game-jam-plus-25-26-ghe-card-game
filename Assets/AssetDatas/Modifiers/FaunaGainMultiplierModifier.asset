@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33d3827c028b2d349b4ff724a598c235, type: 3}
   m_Name: FaunaGainMultiplierModifier
   m_EditorClassIdentifier: Assembly-CSharp::ResourceGainMultiplierModifier
-  ModifierName: AAA
-  ModifierDescription: XXX
+  ModifierName: Poseidon's Net
+  ModifierDescription: Every time you gain Fauna as a result of a choice, gain 2x
+    that ammount
+  icon: {fileID: 0}
   resource: {fileID: 11400000, guid: dd3e1199d3d71804d8e73c092bc15795, type: 2}
   multiplierAmount: 1

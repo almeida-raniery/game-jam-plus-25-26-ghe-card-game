@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 280ad01d3d0dbdd4da908fd510c74af9, type: 3}
+  m_Name: AeoliusCard
+  m_EditorClassIdentifier: Assembly-CSharp::CardData
+  isModifierCard: 0
+  cardTitle: Aeolia, the Floating Island
+  cardText: You are received by the king with a feast and offered a gift
+  cardImage: {fileID: 0}
+  cardBackground: {fileID: 1257480204175348803, guid: d937affbbd412ba4db06f724a644009b, type: 3}
+  cardSound: {fileID: 0}
+  cardLeftAction: {fileID: 11400000, guid: 503e66b38819dd248bc77553914d7469, type: 2}
+  cardRightAction: {fileID: 11400000, guid: 5dcb4c75fc9df71439a8fba265ba5794, type: 2}
