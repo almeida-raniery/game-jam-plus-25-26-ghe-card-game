@@ -12,5 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab6bd91487aafe045912a754886d3723, type: 3}
   m_Name: TroyModifier
   m_EditorClassIdentifier: Assembly-CSharp::TroyModifier
-  ModifierName: Troy Horse
-  ModifierDescription: 
+  ModifierName: Courage of the Corinthians
+  ModifierDescription: Every time you would lose Culture as the result of a choice,
+    reduce that value by 1
+  icon: {fileID: 0}
