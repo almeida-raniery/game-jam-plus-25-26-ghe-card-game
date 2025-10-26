@@ -169,7 +169,7 @@ public class GameManager : MonoBehaviour
 
         var pointsInTurnToAdd = 0;
         // We calculate the total score
-        foreach (var resource in levelResources)
+        foreach (ResourceData resource in levelResources)
         {
             pointsInTurnToAdd += resource.CalculateTotalBonus();
             resource.ResourceTurnBonusPoints = 0;
