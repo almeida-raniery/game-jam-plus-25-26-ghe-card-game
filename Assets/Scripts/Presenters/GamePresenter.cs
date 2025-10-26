@@ -21,12 +21,14 @@ public class GamePresenter : MonoBehaviour
     {
         EventBus.onResourceModifiedEvent += UpdateResources;
         EventBus.onTurnEndedEvent += UpdateGameUI;
+        EventBus.onTurnInitializedEvent += UpdateGameUI;
         EventBus.onGameInitializedEvent += UpdateGameUI;
     }
     private void OnDestroy()
     {
         EventBus.onResourceModifiedEvent -= UpdateResources;
         EventBus.onTurnEndedEvent -= UpdateGameUI;
+        EventBus.onTurnInitializedEvent -= UpdateGameUI;
     }
 
     public void UpdateGameUI() 
