@@ -5,5 +5,5 @@ public static class Constants
     public const string BASE_CREATE_DATA_PATH = BASE_PATH + "Data/";
     public const string BASE_CREATE_ACTIONS_PATH = BASE_PATH + "Actions/";
 
-    public enum EndType { FloraEnd, FaunaEnd, CultureEnd, AllEnd }
+    public enum EndType { FloraEnd, FaunaEnd, CultureEnd, AllEnd, FailEnd }
 }
