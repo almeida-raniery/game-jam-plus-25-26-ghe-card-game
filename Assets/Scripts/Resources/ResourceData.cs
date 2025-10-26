@@ -11,8 +11,6 @@ public class ResourceData : ScriptableObject
     public int ResourceTurnBonusPoints { get; set; }
     public int LastAmountAddedToResource { get; set; }
 
-    public Constants.EndType EndType;
-
     public void ResetResource()
     {
         ResourceQuantity = 0;
@@ -24,7 +22,6 @@ public class ResourceData : ScriptableObject
     public void ModifyResourceCount(int amount)
     {
         ResourceQuantity += amount;
-        Debug.Log(ResourceName + ": " + ResourceQuantity.ToString() + "x");
         if (ResourceQuantity < 0)
             ResourceQuantity = 0;
         LastAmountAddedToResource = amount;
@@ -33,6 +30,7 @@ public class ResourceData : ScriptableObject
 
     public int CalculateTotalBonus()
     {
+        Debug.Log(ResourceName + ": " + ResourceScoreMultiplier.ToString() + "x");
         int finalValue = (int)((ResourceBaseValue * ResourceQuantity + ResourceTurnBonusPoints) * ResourceScoreMultiplier);
         return finalValue;
     }

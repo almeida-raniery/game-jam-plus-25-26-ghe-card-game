@@ -8,10 +8,10 @@ public static class EventBus
     {
         onGameInitializedEvent?.Invoke();
     }
-    public static Action<Constants.EndType> onGameOverRequestedEvent;
-    public static void GameOverRequestedEvent(Constants.EndType endType)
+    public static Action onGameOverRequestedEvent;
+    public static void GameOverRequestedEvent()
     {
-        onGameOverRequestedEvent?.Invoke(endType);
+        onGameOverRequestedEvent?.Invoke();
     }
 
     public static Action<CardAction> onCardActionChoosenEvent;
