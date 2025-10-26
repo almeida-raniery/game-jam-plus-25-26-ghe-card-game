@@ -174,8 +174,8 @@ public class GameManager : MonoBehaviour
 
         gameData.TotalScore += pointsInTurnToAdd;
 
-        EventBus.TurnEndedEvent();
         PrepareNextTurn();
+        EventBus.TurnEndedEvent();
     }
 
     public void PrepareNextTurn()
@@ -185,6 +185,7 @@ public class GameManager : MonoBehaviour
         if (gameData.gameCardPile.Count > 0)
             EventBus.TakeCardFromDeckEvent(gameData.gameCardPile.Dequeue());
         else
+            print("Here");
             HandleGameOver();
     }
 
