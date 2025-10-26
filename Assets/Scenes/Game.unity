@@ -1306,7 +1306,7 @@ MonoBehaviour:
   gameOverScreen: {fileID: 2049792964}
   endingTitle: {fileID: 1025114028}
   gameOverPointsTotal: {fileID: 1482527358}
-  endingImage: {fileID: 821103119}
+  endingImage: {fileID: 8069077768358482727}
   gameOverResource1QuantityText: {fileID: 961631101}
   gameOverResource2QuantityText: {fileID: 2036889851}
   gameOverResource3QuantityText: {fileID: 916646603}
@@ -2165,17 +2165,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 810512064}
   m_CullTransparentMesh: 1
---- !u!114 &821103119 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4429040365763959837, guid: 7c46eb77d55278c4abd91cf0dda92850, type: 3}
-  m_PrefabInstance: {fileID: 8069077768358482726}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
 --- !u!1 &871608618
 GameObject:
   m_ObjectHideFlags: 0
@@ -6553,6 +6542,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameOverScreen
       objectReference: {fileID: 0}
+    - target: {fileID: 8297699986744053001, guid: 7c46eb77d55278c4abd91cf0dda92850, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8436186483351268367, guid: 7c46eb77d55278c4abd91cf0dda92850, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -6646,6 +6639,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7c46eb77d55278c4abd91cf0dda92850, type: 3}
+--- !u!114 &8069077768358482727 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1396284657437066584, guid: 7c46eb77d55278c4abd91cf0dda92850, type: 3}
+  m_PrefabInstance: {fileID: 8069077768358482726}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
