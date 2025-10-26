@@ -43,8 +43,14 @@ public class GamePresenter : MonoBehaviour
             icon.enabled = true;
         }
 
-        scoreLabel.text = gameData.TotalScore.ToString();
+        UpdateScoreLabel();
+        
         cardsInDeckText.text = gameData.gameCardPile.Count.ToString();
+    }
+
+    private void UpdateScoreLabel()
+    {
+        scoreLabel.text = gameData.TotalScore.ToString();
     }
 
     private void UpdateResources(ResourceData data) 

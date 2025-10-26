@@ -1,0 +1,413 @@
+fileFormatVersion: 2
+guid: 50ab7f07ac27f0a478c637a34a4fca3c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -9100517801669735094
+    second: Padroes_0
+  - first:
+      213: -4118178535741733507
+    second: Padroes_1
+  - first:
+      213: 5438812459360974834
+    second: Padroes_2
+  - first:
+      213: 4841375055779361332
+    second: Padroes_3
+  - first:
+      213: -5256128117032524354
+    second: Padroes_4
+  - first:
+      213: 8913851291130265579
+    second: Padroes_5
+  - first:
+      213: -8660248513925383546
+    second: Padroes_6
+  - first:
+      213: -3049724527069270781
+    second: Padroes_7
+  - first:
+      213: -7469164165319760187
+    second: Padroes_8
+  - first:
+      213: -6290049686744538513
+    second: Padroes_9
+  - first:
+      213: 7131207455551671833
+    second: Padroes_10
+  - first:
+      213: -4654643926296520194
+    second: Padroes_11
+  - first:
+      213: 1927892525819765462
+    second: Padroes_12
+  - first:
+      213: -4556899656952429742
+    second: Padroes_13
+  - first:
+      213: 8116960146294108048
+    second: Padroes_14
+  - first:
+      213: -1426759320869107111
+    second: Padroes_15
+  - first:
+      213: 7783319273333123763
+    second: Padroes_16
+  - first:
+      213: 5987207971508642896
+    second: Padroes_17
+  - first:
+      213: -4603518218072357376
+    second: Padroes_18
+  - first:
+      213: 612934553743872911
+    second: Padroes_19
+  - first:
+      213: -7622974709729266323
+    second: Padroes_20
+  - first:
+      213: -2622545815137290203
+    second: Padroes_21
+  - first:
+      213: -439804669362249548
+    second: Padroes_22
+  - first:
+      213: 1764141915598768201
+    second: Padroes_23
+  - first:
+      213: 9145676759997033563
+    second: Padroes_24
+  - first:
+      213: 5496076970291959172
+    second: Padroes_25
+  - first:
+      213: 4888271454317090368
+    second: Padroes_26
+  - first:
+      213: 1017436267594167311
+    second: Padroes_27
+  - first:
+      213: -5802787100325161088
+    second: Padroes_28
+  - first:
+      213: -1235740447309526253
+    second: Padroes_29
+  - first:
+      213: -9155484436761124759
+    second: Padroes_30
+  - first:
+      213: -4952208196970438517
+    second: Padroes_31
+  - first:
+      213: -496966039972403238
+    second: Padroes_32
+  - first:
+      213: -2291022587664239547
+    second: Padroes_33
+  - first:
+      213: -1862602785266061958
+    second: Padroes_34
+  - first:
+      213: -2546750241284734694
+    second: Padroes_35
+  - first:
+      213: -2160394843321773363
+    second: Padroes_36
+  - first:
+      213: 6535851021417662498
+    second: Padroes_37
+  - first:
+      213: 241048764661158746
+    second: Padroes_38
+  - first:
+      213: -3445552183701084560
+    second: Padroes_39
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Padroes_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 878
+        width: 1024
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4d4b57a64774b180800000000000000
+      internalID: -9100517801669735094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Padroes_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 732
+        width: 1024
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d75c977d07a49d6c0800000000000000
+      internalID: -4118178535741733507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Padroes_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 586
+        width: 1024
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f7fd20ad1b8a7b40800000000000000
+      internalID: 5438812459360974834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Padroes_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 440
+        width: 1024
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4327a2866f4003340800000000000000
+      internalID: 4841375055779361332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Padroes_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 294
+        width: 1024
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb56552635b7e07b0800000000000000
+      internalID: -5256128117032524354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Padroes_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 148
+        width: 1024
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: beff97c858c54bb70800000000000000
+      internalID: 8913851291130265579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Padroes_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2
+        width: 1024
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68a7fdc4cdd90d780800000000000000
+      internalID: -8660248513925383546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: e4c579878cbc20f4f947dd20c43d997b
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":7.0},"gridSpriteSize":{"x":1024.0,"y":146.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Padroes_0: -9100517801669735094
+      Padroes_1: -4118178535741733507
+      Padroes_2: 5438812459360974834
+      Padroes_3: 4841375055779361332
+      Padroes_4: -5256128117032524354
+      Padroes_5: 8913851291130265579
+      Padroes_6: -8660248513925383546
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
