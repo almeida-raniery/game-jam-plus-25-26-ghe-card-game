@@ -25,8 +25,8 @@ public class GamePresenter : MonoBehaviour
 
     [Header("Game Over - setup")]
     [SerializeField] GameObject gameOverScreen;
-    [SerializeField] TextMeshProUGUI endingTitle; 
-    [SerializeField] TextMeshProUGUI gameOverPointsTotal; 
+    [SerializeField] TextMeshProUGUI endingTitle;
+    [SerializeField] TextMeshProUGUI gameOverPointsTotal;
     [SerializeField] Image endingImage;
     [SerializeField] TextMeshProUGUI gameOverResource1QuantityText;
     [SerializeField] TextMeshProUGUI gameOverResource2QuantityText;
@@ -68,7 +68,7 @@ public class GamePresenter : MonoBehaviour
         modDisplayPannel.gameObject.SetActive(true);
     }
 
-    public void UpdateGameUI() 
+    public void UpdateGameUI()
     {
         resource1QuantityText.text = resource1Data.ResourceQuantity.ToString();
         resource2QuantityText.text = resource2Data.ResourceQuantity.ToString();
@@ -112,7 +112,7 @@ public class GamePresenter : MonoBehaviour
                 break;
         }
     }
-    
+
     private void UpdateModifierIcons()
     {
         foreach (Image slot in modSlots)
@@ -120,24 +120,26 @@ public class GamePresenter : MonoBehaviour
 
         for (int i = 0; i < gameData.currentModifiers.Count; i++)
         {
-            Image icon = modSlots[i].GetComponentsInChildren<Image>()[1];
-
-            icon.sprite = gameData.currentModifiers[i].icon;
-            icon.enabled = true;
+            if (i < 4)
+            {
+                Image icon = modSlots[i].GetComponentsInChildren<Image>()[1];
+                icon.sprite = gameData.currentModifiers[i].icon;
+                icon.enabled = true;
+            }
         }
     }
 
-    private void UpdateResources(ResourceData data) 
+    private void UpdateResources(ResourceData data)
     {
         UpdateGameUI();
     }
 
-    public void ReturnToMenu() 
+    public void ReturnToMenu()
     {
         SceneManager.LoadScene("MainMenu", LoadSceneMode.Single);
     }
 
-    public void PlayAgain() 
+    public void PlayAgain()
     {
         SceneManager.LoadScene("Game", LoadSceneMode.Single);
     }

@@ -1,4 +1,3 @@
-using Mono.Cecil;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "NewResource", menuName = Constants.BASE_PATH + "New Resource")]
