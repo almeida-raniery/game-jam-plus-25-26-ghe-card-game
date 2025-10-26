@@ -12,9 +12,11 @@ public class ResourceData : ScriptableObject
 
     public Constants.EndType EndType;
 
+    [SerializeField] int resourceBeginQuantity = 3;
+
     public void ResetResource()
     {
-        ResourceQuantity = 0;
+        ResourceQuantity = resourceBeginQuantity;
         ResourceBaseValue = 10;
         ResourceScoreMultiplier = 1;
         ResourceTurnBonusPoints = 0;
