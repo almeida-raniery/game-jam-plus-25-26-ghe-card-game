@@ -1,19 +1,13 @@
 fileFormatVersion: 2
-guid: 9d26126c0cbd3e148a1d8852b0830cd7
+guid: b9465ee05d0257a44bdc91a35a2d47d6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3329100039975521696
-    second: Fofos_0
+      213: -3694022050732921935
+    second: BaseMenubuttons_0
   - first:
-      213: 8706749934982026999
-    second: Fofos_1
-  - first:
-      213: 4689938387806709218
-    second: Fofos_2
-  - first:
-      213: -7478673137140377950
-    second: Fofos_3
+      213: -7370575951361681367
+    second: BaseMenubuttons_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -81,7 +75,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 1024
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -122,13 +116,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Fofos_0
+      name: BaseMenubuttons_0
       rect:
         serializedVersion: 2
-        x: 11
-        y: 325
+        x: 0
+        y: 47
         width: 466
-        height: 229
+        height: 7
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +131,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0623587e629acc1d0800000000000000
-      internalID: -3329100039975521696
+      spriteID: 1bbaa9144823cbcc0800000000000000
+      internalID: -3694022050732921935
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fofos_1
+      name: BaseMenubuttons_1
       rect:
         serializedVersion: 2
-        x: 136
-        y: 541
-        width: 13
-        height: 14
+        x: 0
+        y: 0
+        width: 466
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -159,52 +153,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7f652ce7fe694d870800000000000000
-      internalID: 8706749934982026999
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fofos_2
-      rect:
-        serializedVersion: 2
-        x: 304
-        y: 547
-        width: 9
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2e5efa78d12061140800000000000000
-      internalID: 4689938387806709218
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fofos_3
-      rect:
-        serializedVersion: 2
-        x: 2
-        y: 396
-        width: 14
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2a6dd7dc76a663890800000000000000
-      internalID: -7478673137140377950
+      spriteID: 928dc05293476b990800000000000000
+      internalID: -7370575951361681367
       vertices: []
       indices: 
       edges: []
@@ -223,10 +173,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Fofos_0: -3329100039975521696
-      Fofos_1: 8706749934982026999
-      Fofos_2: 4689938387806709218
-      Fofos_3: -7478673137140377950
+      BaseMenubuttons_0: -3694022050732921935
+      BaseMenubuttons_1: -7370575951361681367
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
