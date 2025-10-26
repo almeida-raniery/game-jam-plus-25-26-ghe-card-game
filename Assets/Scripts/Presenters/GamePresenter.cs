@@ -37,12 +37,14 @@ public class GamePresenter : MonoBehaviour
     [SerializeField] Sprite cultureEndingSprite;
     [SerializeField] Sprite faunaEndingSprite;
     [SerializeField] Sprite allEndingSprite;
+    [SerializeField] Sprite failEndingSprite;
 
     [Header("Game Over - Title strings")]
     [SerializeField] string floraEndingText;
     [SerializeField] string cultureEndingText;
     [SerializeField] string faunaEndingText;
     [SerializeField] string allEndingText;
+    [SerializeField] string failEndingText;
 
     private void Awake()
     {
@@ -107,6 +109,10 @@ public class GamePresenter : MonoBehaviour
             case Constants.EndType.AllEnd:
                 endingImage.sprite = allEndingSprite;
                 endingTitle.text = allEndingText;
+                break;
+            case Constants.EndType.FailEnd:
+                endingImage.sprite = failEndingSprite;
+                endingTitle.text = failEndingText;
                 break;
             default:
                 break;
