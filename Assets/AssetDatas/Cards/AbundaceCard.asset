@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: AbundaceCard
   m_EditorClassIdentifier: Assembly-CSharp::CardData
   isModifierCard: 0
-  cardTitle: Abundence
-  cardText: 
-  cardImage: {fileID: 0}
-  cardBackground: {fileID: 0}
+  cardTitle: Perserphone's Destiny
+  cardText: The goddess of the harvest visits you in a dream
+  cardImage: {fileID: 21300000, guid: 47421310567b6c642a8653eaf1e43465, type: 3}
+  cardBackground: {fileID: -702013892854430440, guid: d937affbbd412ba4db06f724a644009b, type: 3}
   cardSound: {fileID: 0}
   cardLeftAction: {fileID: 11400000, guid: f69d8d336ec2b8243ae1277ea384b547, type: 2}
   cardRightAction: {fileID: 11400000, guid: 125b873d6f8a155469e31284a7ca0e1c, type: 2}

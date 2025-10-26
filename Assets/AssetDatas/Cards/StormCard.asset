@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CardData
   isModifierCard: 0
   cardTitle: Storm
-  cardText: 
-  cardImage: {fileID: 0}
-  cardBackground: {fileID: 0}
+  cardText: A dangerous storm rages on
+  cardImage: {fileID: 21300000, guid: 6cad9e216a475834d857b8d6917767c6, type: 3}
+  cardBackground: {fileID: 5613690452504595799, guid: d937affbbd412ba4db06f724a644009b, type: 3}
   cardSound: {fileID: 0}
   cardLeftAction: {fileID: 11400000, guid: 986200bd01beac642bb4c57286a745a7, type: 2}
   cardRightAction: {fileID: 11400000, guid: 8e671252e2b1ae24aa1887364c16e9ae, type: 2}

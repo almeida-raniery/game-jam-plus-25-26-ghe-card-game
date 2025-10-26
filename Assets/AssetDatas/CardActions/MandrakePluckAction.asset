@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: MandrakePluckAction
   m_EditorClassIdentifier: Assembly-CSharp::GiveCardAction
   CardActionName: Pluck
-  CardActionDescription: 
+  CardActionDescription: Pluck them from the ground
   gameData: {fileID: 11400000, guid: 1edebd0dde124bd45800009611215ae4, type: 2}
   resources:
   - resource: {fileID: 11400000, guid: dd3e1199d3d71804d8e73c092bc15795, type: 2}

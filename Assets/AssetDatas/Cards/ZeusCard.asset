@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: ZeusCard
   m_EditorClassIdentifier: Assembly-CSharp::CardData
   isModifierCard: 0
-  cardTitle: Zeus
-  cardText: 
+  cardTitle: Zeus's test
+  cardText: Humble yourself before the god of gods, or suffer the consequences.
   cardImage: {fileID: 0}
-  cardBackground: {fileID: 0}
+  cardBackground: {fileID: -702013892854430440, guid: d937affbbd412ba4db06f724a644009b, type: 3}
   cardSound: {fileID: 0}
   cardLeftAction: {fileID: 11400000, guid: b0d02de5b00e4bb4fbb95a34c2c6d722, type: 2}
   cardRightAction: {fileID: 11400000, guid: 3a6fa82668017e54e88924d9af8f97fd, type: 2}

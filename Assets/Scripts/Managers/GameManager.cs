@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private List<CardData> AllNormalCardsList;
     [SerializeField] private List<CardData> AllModifierCardsList;
     [SerializeField] private List<ResourceData> levelResources;
+    [SerializeField] private List<ModifierBase> initialModifiers;
 
     // Options
     [Header("Game Options")]
@@ -47,7 +48,10 @@ public class GameManager : MonoBehaviour
 
     private void InitializeGame()
     {
+        var initialModifier = GetInitialModifier();
+
         gameData.ResetGameData();
+        gameData.currentModifiers.Add(initialModifier);
 
         foreach (ResourceData resource in levelResources)
         {
@@ -67,6 +71,7 @@ public class GameManager : MonoBehaviour
             tempAllCardList.RemoveRange(0, initialNormalCardsQuantity + initialModifierCardsQuantity);
 
         EventBus.TakeCardFromDeckEvent(gameData.gameCardPile.Dequeue());
+        EventBus.GameInitializedEvent();
     }
 
     public void AddMoreCardsToDeck(int quantityToAdd)
@@ -139,9 +144,16 @@ public class GameManager : MonoBehaviour
         selectedAction.ExecuteAction();
         foreach (var resource in levelResources)
         {
-            resource.ResourceScoreMultiplier = 0;
+            resource.ResourceScoreMultiplier = 1;
         }
         HandleTurn();
+    }
+
+    public ModifierBase GetInitialModifier()
+    {
+        var rng = new System.Random();
+
+        return initialModifiers.OrderBy(x => rng.Next()).ToList()[0];
     }
 
     public void HandleTurn()

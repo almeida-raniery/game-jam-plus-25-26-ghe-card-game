@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CardData
   isModifierCard: 0
   cardTitle: Lotus Eaters
-  cardText: 
-  cardImage: {fileID: 0}
-  cardBackground: {fileID: 0}
+  cardText: A small pack of critters approach, offering delicious flowers
+  cardImage: {fileID: 21300000, guid: e826536712a00894b8d0e8cd106ab7ce, type: 3}
+  cardBackground: {fileID: -702013892854430440, guid: d937affbbd412ba4db06f724a644009b, type: 3}
   cardSound: {fileID: 0}
   cardLeftAction: {fileID: 11400000, guid: c5c99e627b872f44cbadcf5aec1c6c5d, type: 2}
   cardRightAction: {fileID: 11400000, guid: fef12de9f9e6f2640a99d30580551d7a, type: 2}

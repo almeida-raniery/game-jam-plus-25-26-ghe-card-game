@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: CirceCard
   m_EditorClassIdentifier: Assembly-CSharp::CardData
   isModifierCard: 0
-  cardTitle: Circe
-  cardText: 
-  cardImage: {fileID: 0}
-  cardBackground: {fileID: 0}
+  cardTitle: Circe, the man-hating witch
+  cardText: The beautiful witch winks at you
+  cardImage: {fileID: 21300000, guid: fa997956c64f21f438cc33f911480c6c, type: 3}
+  cardBackground: {fileID: 5613690452504595799, guid: d937affbbd412ba4db06f724a644009b, type: 3}
   cardSound: {fileID: 0}
   cardLeftAction: {fileID: 11400000, guid: cb4fc125e8b6a234eb8dbffeeee0b6ad, type: 2}
   cardRightAction: {fileID: 11400000, guid: 732c102aaf350784ab23686dd069bbd3, type: 2}

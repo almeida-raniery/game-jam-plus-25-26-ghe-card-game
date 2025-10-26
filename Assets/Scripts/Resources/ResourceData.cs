@@ -1,3 +1,4 @@
+using Mono.Cecil;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "NewResource", menuName = Constants.BASE_PATH + "New Resource")]
@@ -13,6 +14,9 @@ public class ResourceData : ScriptableObject
     public void ResetResource()
     {
         ResourceQuantity = 0;
+        ResourceBaseValue = 10;
+        ResourceScoreMultiplier = 1;
+        ResourceTurnBonusPoints = 0;
     }
 
     public void ModifyResourceCount(int amount)
@@ -26,7 +30,8 @@ public class ResourceData : ScriptableObject
 
     public int CalculateTotalBonus()
     {
-        int finalValue = (int)((ResourceBaseValue + ResourceTurnBonusPoints) * ResourceScoreMultiplier);
+        Debug.Log(ResourceName + ": " + ResourceScoreMultiplier.ToString() + "x");
+        int finalValue = (int)((ResourceBaseValue * ResourceQuantity + ResourceTurnBonusPoints) * ResourceScoreMultiplier);
         return finalValue;
     }
 }

@@ -11,7 +11,10 @@ public class ResourceBonusScoreModifier : ModifierBase
     {
         foreach (ResourceData resource in resourceList)
         {
-            resource.ResourceScoreMultiplier += multiplierAmount;
+            if (resource.ResourceScoreMultiplier > 1)
+                resource.ResourceScoreMultiplier += multiplierAmount;
+            else
+                resource.ResourceScoreMultiplier = multiplierAmount;
         }
     }
 }

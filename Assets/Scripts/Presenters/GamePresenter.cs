@@ -1,5 +1,7 @@
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GamePresenter : MonoBehaviour
 {
@@ -7,7 +9,8 @@ public class GamePresenter : MonoBehaviour
     [SerializeField] TextMeshProUGUI resource2QuantityText;
     [SerializeField] TextMeshProUGUI resource3QuantityText;
     [SerializeField] TextMeshProUGUI cardsInDeckText;
-    [SerializeField] TextMeshProUGUI modsQuantityText;
+    [SerializeField] TextMeshProUGUI scoreLabel;
+    [SerializeField] List<Image> modSlots;
 
     [SerializeField] ResourceData resource1Data;
     [SerializeField] ResourceData resource2Data;
@@ -18,8 +21,8 @@ public class GamePresenter : MonoBehaviour
     {
         EventBus.onResourceModifiedEvent += UpdateResources;
         EventBus.onTurnEndedEvent += UpdateGameUI;
+        EventBus.onGameInitializedEvent += UpdateGameUI;
     }
-
     private void OnDestroy()
     {
         EventBus.onResourceModifiedEvent -= UpdateResources;
@@ -32,8 +35,15 @@ public class GamePresenter : MonoBehaviour
         resource2QuantityText.text = resource2Data.ResourceQuantity.ToString();
         resource3QuantityText.text = resource3Data.ResourceQuantity.ToString();
 
-        modsQuantityText.text = gameData.currentModifiers.Count.ToString();
+        for (int i = 0; i < gameData.currentModifiers.Count; i++)
+        {
+            Image icon = modSlots[i].GetComponentsInChildren<Image>()[1];
 
+            icon.sprite = gameData.currentModifiers[i].icon;
+            icon.enabled = true;
+        }
+
+        scoreLabel.text = gameData.TotalScore.ToString();
         cardsInDeckText.text = gameData.gameCardPile.Count.ToString();
     }
 

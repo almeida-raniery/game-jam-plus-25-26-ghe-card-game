@@ -3,6 +3,11 @@ using System.Collections.Generic;
 
 public static class EventBus
 {
+    public static Action onGameInitializedEvent;
+    public static void GameInitializedEvent()
+    {
+        onGameInitializedEvent?.Invoke();
+    }
     public static Action onGameOverRequestedEvent;
     public static void GameOverRequestedEvent()
     {

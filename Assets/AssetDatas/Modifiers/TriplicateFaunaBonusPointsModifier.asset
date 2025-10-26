@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8f24f892b3c3fe1498956c065ccb838f, type: 3}
-  m_Name: DuplicateFloraBonusPointsModifier
+  m_Name: TriplicateFaunaBonusPointsModifier
   m_EditorClassIdentifier: Assembly-CSharp::TestModifier
-  ModifierName: AAA
-  ModifierDescription: XXX
+  ModifierName: Lure
+  ModifierDescription: Get 3x the amount of points for every Fauna resource you own.
+  icon: {fileID: 4273214546569975796, guid: d937affbbd412ba4db06f724a644009b, type: 3}
   resourceList:
-  - {fileID: 11400000, guid: 3f927cc46a5f0ea4bb8046e8c7167672, type: 2}
-  multiplierAmount: 2
+  - {fileID: 11400000, guid: dd3e1199d3d71804d8e73c092bc15795, type: 2}
+  multiplierAmount: 3
