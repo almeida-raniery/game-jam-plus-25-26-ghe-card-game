@@ -83,6 +83,8 @@ public class GameManager : MonoBehaviour
 
         if (tempAllCardList.Count >= quantityToAdd)
         {
+            tempAllCardList = tempAllCardList.OrderBy(x => rng.Next()).ToList();
+
             for (int i = 0; i < quantityToAdd; i++)
             {
                 // we add if the card is not a modifier card
