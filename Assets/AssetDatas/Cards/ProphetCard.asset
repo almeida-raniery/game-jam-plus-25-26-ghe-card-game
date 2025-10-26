@@ -18,5 +18,5 @@ MonoBehaviour:
   cardImage: {fileID: 0}
   cardBackground: {fileID: 0}
   cardSound: {fileID: 0}
-  cardLeftAction: {fileID: 0}
-  cardRightAction: {fileID: 0}
+  cardLeftAction: {fileID: 11400000, guid: 4001722c29014aa46aa77c2204a5f8c5, type: 2}
+  cardRightAction: {fileID: 11400000, guid: c45497da3a4261d4586ed9b9aeab52a5, type: 2}

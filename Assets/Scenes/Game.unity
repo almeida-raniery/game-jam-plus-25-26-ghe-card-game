@@ -198,20 +198,17 @@ MonoBehaviour:
   AllNormalCardsList:
   - {fileID: 11400000, guid: f0868de182fa8e1409521d991e898fbf, type: 2}
   - {fileID: 11400000, guid: 334e55e5d300c0e4bb1ddb324517382b, type: 2}
+  - {fileID: 11400000, guid: 25692151d1b4d36468f185a36b0c9cc3, type: 2}
+  - {fileID: 11400000, guid: 926a18885d098464296050bb6cfed2fc, type: 2}
   - {fileID: 11400000, guid: e944793c2469b2d4189e429119e0418b, type: 2}
   - {fileID: 11400000, guid: 7b4f3fde962084d428f65e616028c403, type: 2}
-  - {fileID: 11400000, guid: f0868de182fa8e1409521d991e898fbf, type: 2}
-  - {fileID: 11400000, guid: 334e55e5d300c0e4bb1ddb324517382b, type: 2}
-  - {fileID: 11400000, guid: e944793c2469b2d4189e429119e0418b, type: 2}
-  - {fileID: 11400000, guid: 7b4f3fde962084d428f65e616028c403, type: 2}
+  - {fileID: 11400000, guid: bd589a347fe6f924eb7caef273887b2a, type: 2}
+  - {fileID: 11400000, guid: 5965d3e83b7fa32489b86ff475495b78, type: 2}
+  - {fileID: 11400000, guid: b712d8a9a4308d04e8aa8abb1239353c, type: 2}
   - {fileID: 11400000, guid: 32032c5e4ecca9f4b835e261ed4e8483, type: 2}
   AllModifierCardsList:
   - {fileID: 11400000, guid: 32032c5e4ecca9f4b835e261ed4e8483, type: 2}
-  - {fileID: 11400000, guid: f0868de182fa8e1409521d991e898fbf, type: 2}
-  - {fileID: 11400000, guid: 334e55e5d300c0e4bb1ddb324517382b, type: 2}
-  - {fileID: 11400000, guid: e944793c2469b2d4189e429119e0418b, type: 2}
-  - {fileID: 11400000, guid: 7b4f3fde962084d428f65e616028c403, type: 2}
-  - {fileID: 11400000, guid: 32032c5e4ecca9f4b835e261ed4e8483, type: 2}
+  - {fileID: 11400000, guid: 5965d3e83b7fa32489b86ff475495b78, type: 2}
   levelResources:
   - {fileID: 11400000, guid: 45a7525f08813354e8943662af913ba3, type: 2}
   - {fileID: 11400000, guid: dd3e1199d3d71804d8e73c092bc15795, type: 2}

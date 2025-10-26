@@ -14,8 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GiveCardAction
   CardActionName: Believe
   CardActionDescription: Follow his prophecy
+  gameData: {fileID: 11400000, guid: 1edebd0dde124bd45800009611215ae4, type: 2}
   resources:
   - resource: {fileID: 11400000, guid: 45a7525f08813354e8943662af913ba3, type: 2}
     valueToGain: 1
   cardsToGain: 1
   modifierToGain: {fileID: 0}
+  removeRandomModifier: 0
+  troyMod: {fileID: 11400000, guid: c32a45c4babb4344983c265183563287, type: 2}
+  culture: {fileID: 11400000, guid: 45a7525f08813354e8943662af913ba3, type: 2}
+  WindsMod: {fileID: 11400000, guid: a6b756e34481a58449c4a1daf78bebc7, type: 2}
