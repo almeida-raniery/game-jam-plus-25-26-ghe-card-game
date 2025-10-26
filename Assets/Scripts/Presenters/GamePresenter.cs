@@ -56,6 +56,9 @@ public class GamePresenter : MonoBehaviour
     {
         EventBus.onResourceModifiedEvent -= UpdateResources;
         EventBus.onTurnEndedEvent -= UpdateGameUI;
+        EventBus.onTurnInitializedEvent -= UpdateGameUI;
+        EventBus.onGameOverRequestedEvent -= SetupEndingScreen;
+        EventBus.onGameInitializedEvent -= UpdateGameUI;
     }
 
     public void OnModIconClicked(int modIndex)
@@ -63,9 +66,6 @@ public class GamePresenter : MonoBehaviour
         modDisplayTitleText.text = gameData.currentModifiers[modIndex].ModifierName;
         modDisplayDescriptionText.text = gameData.currentModifiers[modIndex].ModifierDescription;
         modDisplayPannel.gameObject.SetActive(true);
-        EventBus.onTurnInitializedEvent -= UpdateGameUI;
-        EventBus.onGameOverRequestedEvent -= SetupEndingScreen;
-        EventBus.onGameInitializedEvent -= UpdateGameUI;
     }
 
     public void UpdateGameUI() 
