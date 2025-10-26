@@ -18,5 +18,5 @@ MonoBehaviour:
   cardImage: {fileID: 21300000, guid: bf02ddfd2d1cbda42b592c7be477edc9, type: 3}
   cardBackground: {fileID: 5613690452504595799, guid: d937affbbd412ba4db06f724a644009b, type: 3}
   cardSound: {fileID: 0}
-  cardLeftAction: {fileID: 11400000, guid: 986200bd01beac642bb4c57286a745a7, type: 2}
-  cardRightAction: {fileID: 11400000, guid: 8e671252e2b1ae24aa1887364c16e9ae, type: 2}
+  cardLeftAction: {fileID: 11400000, guid: 867e4370a4b12354aa04395b9feec05f, type: 2}
+  cardRightAction: {fileID: 11400000, guid: d8cd2b44a6fcc834b814a1c59e0ec62f, type: 2}
