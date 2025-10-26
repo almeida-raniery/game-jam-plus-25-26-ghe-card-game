@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -82,6 +83,8 @@ public class GameManager : MonoBehaviour
 
         if (tempAllCardList.Count >= quantityToAdd)
         {
+            tempAllCardList = tempAllCardList.OrderBy(x => rng.Next()).ToList();
+
             for (int i = 0; i < quantityToAdd; i++)
             {
                 // we add if the card is not a modifier card
@@ -92,7 +95,7 @@ public class GameManager : MonoBehaviour
                 // if it is, we just take from the normal pile
                 else
                 {
-                    gameData.gameCardPile.Enqueue(AllNormalCardsList[Random.Range(0, AllNormalCardsList.Count)]);
+                    gameData.gameCardPile.Enqueue(AllNormalCardsList[UnityEngine.Random.Range(0, AllNormalCardsList.Count)]);
                 }
             }
         }
@@ -180,10 +183,12 @@ public class GameManager : MonoBehaviour
 
     public void PrepareNextTurn()
     {
-        EventBus.TurnInitializedEvent();
         // If there are still cards on the pile
         if (gameData.gameCardPile.Count > 0)
+        {
             EventBus.TakeCardFromDeckEvent(gameData.gameCardPile.Dequeue());
+            EventBus.TurnInitializedEvent();
+        }
         else
             HandleGameOver();
     }
@@ -198,7 +203,7 @@ public class GameManager : MonoBehaviour
     {
         if (gameData.currentModifiers.Count > 0)
         {
-            var index = Random.Range(0, gameData.currentModifiers.Count);
+            var index = UnityEngine.Random.Range(0, gameData.currentModifiers.Count);
             EventBus.onLoseModifierEvent(gameData.currentModifiers[index]);
             gameData.currentModifiers.RemoveAt(index);
         }
@@ -206,7 +211,38 @@ public class GameManager : MonoBehaviour
 
     public void HandleGameOver()
     {
-        EventBus.GameOverRequestedEvent();
+        Constants.EndType ending = Constants.EndType.AllEnd;
+
+        // Check wich ending we got
+        int highestResource = -100000;
+        foreach (ResourceData resource in levelResources)
+        {
+
+            if (resource.ResourceQuantity > highestResource)
+            {
+                highestResource = resource.ResourceQuantity;
+                ending = resource.EndType;
+            }
+        }
+
+        int[] values = new int[levelResources.Count];
+
+        for (int i = 0; i < levelResources.Count; i++) 
+        {
+            values[i] = levelResources[i].ResourceQuantity;
+        }  
+
+        Array.Sort(values);
+
+        // We see if we got the all ending
+        if (values.Max() * 0.75f <= values.Min() * 1.25f)
+        { 
+            ending = Constants.EndType.AllEnd;
+        }
+
+        print("ending: " + ending);
+
+        EventBus.GameOverRequestedEvent(ending);
     }
 
     private void OnDestroy()
