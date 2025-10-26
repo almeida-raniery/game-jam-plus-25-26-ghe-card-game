@@ -195,7 +195,10 @@ public class GameManager : MonoBehaviour
 
     public void GiveModifierToPlayer(ModifierBase modifierToGive)
     {
-        gameData.currentModifiers.Add(modifierToGive);
+        if (gameData.currentModifiers.Count < 4)
+        {
+            gameData.currentModifiers.Add(modifierToGive);
+        }
         print("Gave Player modifier: " + modifierToGive.ModifierName);
     }
 

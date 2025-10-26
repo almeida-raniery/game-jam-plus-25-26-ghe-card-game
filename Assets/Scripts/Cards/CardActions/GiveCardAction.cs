@@ -30,7 +30,7 @@ public class GiveCardAction : CardAction
             resval.resource.ModifyResourceCount(valueToGain);
         }
 
-        if (modifierToGain != null)
+        if (modifierToGain != null && gameData.currentModifiers.Count < 4)
             EventBus.GiveModifierEvent(modifierToGain);
 
         if (cardsToGain > 0)
