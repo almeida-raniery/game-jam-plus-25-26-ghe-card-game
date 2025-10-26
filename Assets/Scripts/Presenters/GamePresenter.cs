@@ -11,6 +11,9 @@ public class GamePresenter : MonoBehaviour
     [SerializeField] TextMeshProUGUI cardsInDeckText;
     [SerializeField] TextMeshProUGUI scoreLabel;
     [SerializeField] List<Image> modSlots;
+    [SerializeField] Image modDisplayPannel;
+    [SerializeField] TextMeshProUGUI modDisplayDescriptionText;
+    [SerializeField] TextMeshProUGUI modDisplayTitleText;
 
     [SerializeField] ResourceData resource1Data;
     [SerializeField] ResourceData resource2Data;
@@ -27,6 +30,14 @@ public class GamePresenter : MonoBehaviour
     {
         EventBus.onResourceModifiedEvent -= UpdateResources;
         EventBus.onTurnEndedEvent -= UpdateGameUI;
+
+    }
+
+    public void OnModIconClicked(int modIndex)
+    {
+        modDisplayTitleText.text = gameData.currentModifiers[modIndex].ModifierName;
+        modDisplayDescriptionText.text = gameData.currentModifiers[modIndex].ModifierDescription;
+        modDisplayPannel.gameObject.SetActive(true);
     }
 
     public void UpdateGameUI() 
