@@ -27,10 +27,16 @@ public static class EventBus
         onTakeCardFromDeckEvent?.Invoke(cardData);
     }
 
-    public static Action<List<CardData>> onAddCardsToDeckEvent;
-    public static void AddCardsToDeckEvent(List<CardData> cardsToAdd)
+    public static Action<List<CardData>> onSpecificAddCardsToDeckEvent;
+    public static void AddSpecificCardsToDeckEvent(List<CardData> cardsToAdd)
     {
-        onAddCardsToDeckEvent?.Invoke(cardsToAdd);
+        onSpecificAddCardsToDeckEvent?.Invoke(cardsToAdd);
+    }
+
+    public static Action<int> onAddCardsToDeckByNumberEvent;
+    public static void AddCardsToDeckByNumberEvent(int cardsToAdd)
+    {
+        onAddCardsToDeckByNumberEvent?.Invoke(cardsToAdd);
     }
 
     public static Action<ResourceData> onResourceModifiedEvent;

@@ -35,12 +35,14 @@ public class GameManager : MonoBehaviour
     {
         EventBus.onCardActionChoosenEvent += HandleCardActionSelected;
         EventBus.onGiveModifierEvent += GiveModifierToPlayer;
+        EventBus.onAddCardsToDeckByNumberEvent += AddMoreCardsToDeck;
     }
 
     private void UnsubscribeToEvents()
     {
         EventBus.onCardActionChoosenEvent -= HandleCardActionSelected;
         EventBus.onGiveModifierEvent -= GiveModifierToPlayer;
+        EventBus.onAddCardsToDeckByNumberEvent -= AddMoreCardsToDeck;
     }
 
     private void InitializeGame()
