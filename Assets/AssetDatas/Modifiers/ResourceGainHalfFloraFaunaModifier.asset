@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89f95999b0295504896b5c62b401de87, type: 3}
   m_Name: ResourceGainHalfFloraFaunaModifier
   m_EditorClassIdentifier: Assembly-CSharp::ResourceGainHalfFromOtherModifier
-  ModifierName: AAA
-  ModifierDescription: XXX
+  ModifierName: Bottomless Feeder
+  ModifierDescription: When scoring your Fauna resource, add half of your flora to
+    the total quantity
+  icon: {fileID: -4999953158511169427, guid: 113b381bbc4b1134cacb1baaab695851, type: 3}
   resourceToAddTo: {fileID: 11400000, guid: 3f927cc46a5f0ea4bb8046e8c7167672, type: 2}
   resourceToGainHalfFrom: {fileID: 11400000, guid: dd3e1199d3d71804d8e73c092bc15795, type: 2}

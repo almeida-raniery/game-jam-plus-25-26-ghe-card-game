@@ -15,6 +15,6 @@ MonoBehaviour:
   ModifierName: Poseidon's Net
   ModifierDescription: Every time you gain Fauna as a result of a choice, gain 2x
     that ammount
-  icon: {fileID: 0}
+  icon: {fileID: 7569874325355378779, guid: 113b381bbc4b1134cacb1baaab695851, type: 3}
   resource: {fileID: 11400000, guid: dd3e1199d3d71804d8e73c092bc15795, type: 2}
   multiplierAmount: 1

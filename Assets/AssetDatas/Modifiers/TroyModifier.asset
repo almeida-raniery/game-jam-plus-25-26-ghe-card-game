@@ -15,4 +15,4 @@ MonoBehaviour:
   ModifierName: Courage of the Corinthians
   ModifierDescription: Every time you would lose Culture as the result of a choice,
     reduce that value by 1
-  icon: {fileID: 0}
+  icon: {fileID: -5529459112089811215, guid: 113b381bbc4b1134cacb1baaab695851, type: 3}

@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Teste
-  m_Shader: {fileID: -6465566751694194690, guid: 7ac57b1830558ef4d91ff6897c6f2a60, type: 3}
+  m_Name: PatternMaterial
+  m_Shader: {fileID: -6465566751694194690, guid: 61b8608612556744e953ef82d6cabb43, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -27,7 +27,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _SampleTexture2D_d4c8585e02674775ad433910c93833ce_Texture_1_Texture2D:
+    - _SampleTexture2D_4a4df57680a04399b5de0964164d6c2a_Texture_1_Texture2D:
         m_Texture: {fileID: 2800000, guid: 159da6107702c834ca14b96aaad04e86, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -46,7 +46,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _ColorMask: 15
-    - _Float: 0.12
+    - _Float: 0.705
     - _Stencil: 0
     - _StencilComp: 8
     - _StencilOp: 0
@@ -56,6 +56,6 @@ Material:
     - _UIMaskSoftnessY: 1
     m_Colors:
     - _ClipRect: {r: 0, g: 0, b: 0, a: 0}
-    - _Color: {r: 0.6830188, g: 0.1806228, b: 0, a: 1}
+    - _Color: {r: 0, g: 0.076034866, b: 0.22264141, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
