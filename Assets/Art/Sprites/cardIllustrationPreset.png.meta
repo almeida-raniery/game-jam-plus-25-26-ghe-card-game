@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: 9502dbeecd0daf54cad596019e283bb2
+guid: ed4ac371d5088484da71a39f2bb3e42c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7003428269158297971
-    second: cardIllustrationCyclops 1_0
+      213: -1943947769766318423
+    second: cardIllustrationPreset_0
+  - first:
+      213: 206118518034240832
+    second: cardIllustrationPreset_1
+  - first:
+      213: 2583926157588813294
+    second: cardIllustrationPreset_2
+  - first:
+      213: -3735312499810230411
+    second: cardIllustrationPreset_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +122,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: cardIllustrationCyclops 1_0
+      name: cardIllustrationPreset_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 270
-        width: 480
-        height: 342
+        x: 1
+        y: 315
+        width: 374
+        height: 291
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +137,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d8e04ee4813dece90800000000000000
-      internalID: -7003428269158297971
+      spriteID: 9ae6a298dc5b505e0800000000000000
+      internalID: -1943947769766318423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cardIllustrationPreset_1
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 451
+        width: 137
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0459f0933b74cd200800000000000000
+      internalID: 206118518034240832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cardIllustrationPreset_2
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 467
+        width: 66
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee5dbec6623fbd320800000000000000
+      internalID: 2583926157588813294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cardIllustrationPreset_3
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 350
+        width: 82
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57f1cbb6211892cc0800000000000000
+      internalID: -3735312499810230411
       vertices: []
       indices: 
       edges: []
@@ -148,7 +223,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      cardIllustrationCyclops 1_0: -7003428269158297971
+      cardIllustrationPreset_0: -1943947769766318423
+      cardIllustrationPreset_1: 206118518034240832
+      cardIllustrationPreset_2: 2583926157588813294
+      cardIllustrationPreset_3: -3735312499810230411
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

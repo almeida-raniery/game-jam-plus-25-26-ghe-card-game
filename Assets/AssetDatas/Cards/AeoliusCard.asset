@@ -15,7 +15,7 @@ MonoBehaviour:
   isModifierCard: 0
   cardTitle: Aeolia, the Floating Island
   cardText: You are received by the king with a feast and offered a gift
-  cardImage: {fileID: 0}
+  cardImage: {fileID: 21300000, guid: fad4f9a0c1df3f24184038497e41260c, type: 3}
   cardBackground: {fileID: 1257480204175348803, guid: d937affbbd412ba4db06f724a644009b, type: 3}
   cardSound: {fileID: 0}
   cardLeftAction: {fileID: 11400000, guid: 503e66b38819dd248bc77553914d7469, type: 2}
