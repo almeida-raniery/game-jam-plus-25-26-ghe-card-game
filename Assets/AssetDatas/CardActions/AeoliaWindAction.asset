@@ -9,9 +9,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 316ef11eb6affd2458bd768c0cd1304a, type: 3}
+  m_Script: {fileID: 11500000, guid: e623f165bec243c4f96bcafab5c24043, type: 3}
   m_Name: AeoliaWindAction
-  m_EditorClassIdentifier: Assembly-CSharp::GiveModifierCardAction
+  m_EditorClassIdentifier: Assembly-CSharp::GiveCardAction
   CardActionName: Take the bag
   CardActionDescription: 
-  modifierToGive: {fileID: 11400000, guid: a6b756e34481a58449c4a1daf78bebc7, type: 2}
+  GiveCardAction: {fileID: 11400000}
+  gameData: {fileID: 11400000, guid: 1edebd0dde124bd45800009611215ae4, type: 2}
+  resources:
+  - resource: {fileID: 11400000, guid: dd3e1199d3d71804d8e73c092bc15795, type: 2}
+    valueToGain: 1
+  - resource: {fileID: 11400000, guid: 45a7525f08813354e8943662af913ba3, type: 2}
+    valueToGain: 0
+  - resource: {fileID: 11400000, guid: 3f927cc46a5f0ea4bb8046e8c7167672, type: 2}
+    valueToGain: 1
+  cardsToGain: 0
+  modifierToGain: {fileID: 11400000, guid: a6b756e34481a58449c4a1daf78bebc7, type: 2}
+  removeRandomModifier: 0
+  troyMod: {fileID: 11400000, guid: c32a45c4babb4344983c265183563287, type: 2}
+  culture: {fileID: 11400000, guid: 45a7525f08813354e8943662af913ba3, type: 2}
+  WindsMod: {fileID: 11400000, guid: a6b756e34481a58449c4a1daf78bebc7, type: 2}

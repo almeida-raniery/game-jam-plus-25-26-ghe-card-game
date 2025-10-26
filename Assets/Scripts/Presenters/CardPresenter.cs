@@ -130,6 +130,7 @@ public class CardPresenter : MonoBehaviour
     private string getAddSymbol(int quant)
     {
         string returnSymbol = string.Empty;
+
         if (quant == 1)
         {
             returnSymbol = "+";
