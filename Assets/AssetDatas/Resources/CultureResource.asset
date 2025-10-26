@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: CultureResource
   m_EditorClassIdentifier: Assembly-CSharp::ResourceData
   ResourceName: Culture
+  EndType: 2
