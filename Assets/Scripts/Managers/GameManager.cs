@@ -235,7 +235,7 @@ public class GameManager : MonoBehaviour
         Array.Sort(values);
 
         // We see if we got the all ending
-        if (values.Max() * 0.75f <= values.Min() * 1.25f)
+        if (values.Max() * 0.90f <= values.Min() * 1.10f)
         { 
             ending = Constants.EndType.AllEnd;
         }
