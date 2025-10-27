@@ -1315,12 +1315,12 @@ MonoBehaviour:
   cultureEndingSprite: {fileID: 4760443454045671111, guid: 151e5cfd852697b4d9fe9fdfdd931a0a, type: 3}
   faunaEndingSprite: {fileID: -4217181621919404157, guid: 3d407ec5630abf4488e9efe56d345b44, type: 3}
   allEndingSprite: {fileID: 7020673467554907748, guid: 07fa25103392b2849b6957c4389118d5, type: 3}
-  failEndingSprite: {fileID: 0}
-  floraEndingText: Flora End
-  cultureEndingText: Culture End
-  faunaEndingText: Fauna End
-  allEndingText: All End
-  failEndingText: 
+  failEndingSprite: {fileID: -6231292375202080041, guid: f665ae64e97fd3d44acb9f4342a5a3e9, type: 3}
+  floraEndingText: Heroine of the Flora
+  cultureEndingText: Heroine of Culture
+  faunaEndingText: Heroine of the Fauna
+  allEndingText: Heroine of the Polis
+  failEndingText: Defeat
 --- !u!1 &457380281
 GameObject:
   m_ObjectHideFlags: 0
