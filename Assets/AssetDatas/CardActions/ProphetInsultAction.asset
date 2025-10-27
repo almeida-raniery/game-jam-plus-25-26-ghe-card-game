@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e623f165bec243c4f96bcafab5c24043, type: 3}
   m_Name: ProphetInsultAction
   m_EditorClassIdentifier: Assembly-CSharp::GiveCardAction
-  CardActionName: Insult
-  CardActionDescription: Follow his prophecy
+  CardActionName: Doubt
+  CardActionDescription: Question his methods
   GiveCardAction: {fileID: 11400000}
   gameData: {fileID: 11400000, guid: 1edebd0dde124bd45800009611215ae4, type: 2}
   resources:
   - resource: {fileID: 11400000, guid: 45a7525f08813354e8943662af913ba3, type: 2}
-    valueToGain: -2
+    valueToGain: 2
   - resource: {fileID: 11400000, guid: 45a7525f08813354e8943662af913ba3, type: 2}
     valueToGain: 0
   - resource: {fileID: 11400000, guid: 45a7525f08813354e8943662af913ba3, type: 2}

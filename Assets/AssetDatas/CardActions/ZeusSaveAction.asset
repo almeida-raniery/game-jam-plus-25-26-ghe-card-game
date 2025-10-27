@@ -23,7 +23,7 @@ MonoBehaviour:
     valueToGain: -3
   - resource: {fileID: 11400000, guid: 3f927cc46a5f0ea4bb8046e8c7167672, type: 2}
     valueToGain: -3
-  cardsToGain: 3
+  cardsToGain: 2
   modifierToGain: {fileID: 0}
   removeRandomModifier: 0
   troyMod: {fileID: 11400000, guid: c32a45c4babb4344983c265183563287, type: 2}
