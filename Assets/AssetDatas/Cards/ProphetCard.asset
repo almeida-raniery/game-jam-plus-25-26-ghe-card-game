@@ -15,7 +15,7 @@ MonoBehaviour:
   isModifierCard: 0
   cardTitle: Prophet
   cardText: The prophet shows a vision of the future
-  cardImage: {fileID: 21300000, guid: 15c2ef241e970b74bbdd756cb928614c, type: 3}
+  cardImage: {fileID: 21300000, guid: c78ac2b9146583f40a4172116f2a56f4, type: 3}
   cardBackground: {fileID: -7532609294062043228, guid: 317156161370a2345b1eee871ba37733, type: 3}
   cardSound: {fileID: 0}
   cardLeftAction: {fileID: 11400000, guid: 4001722c29014aa46aa77c2204a5f8c5, type: 2}

@@ -15,7 +15,7 @@ MonoBehaviour:
   isModifierCard: 0
   cardTitle: Storm
   cardText: A dangerous storm rages on
-  cardImage: {fileID: 21300000, guid: 6cad9e216a475834d857b8d6917767c6, type: 3}
+  cardImage: {fileID: 21300000, guid: 95a5e65b7a60dc646aba8cf67a435174, type: 3}
   cardBackground: {fileID: -7532609294062043228, guid: 317156161370a2345b1eee871ba37733, type: 3}
   cardSound: {fileID: 0}
   cardLeftAction: {fileID: 11400000, guid: 986200bd01beac642bb4c57286a745a7, type: 2}
