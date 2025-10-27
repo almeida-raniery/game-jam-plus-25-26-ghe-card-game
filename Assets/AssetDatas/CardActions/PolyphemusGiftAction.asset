@@ -20,9 +20,9 @@ MonoBehaviour:
   - resource: {fileID: 11400000, guid: 45a7525f08813354e8943662af913ba3, type: 2}
     valueToGain: 3
   - resource: {fileID: 11400000, guid: dd3e1199d3d71804d8e73c092bc15795, type: 2}
-    valueToGain: -1
+    valueToGain: -2
   - resource: {fileID: 11400000, guid: 3f927cc46a5f0ea4bb8046e8c7167672, type: 2}
-    valueToGain: -1
+    valueToGain: -2
   cardsToGain: 0
   modifierToGain: {fileID: 0}
   removeRandomModifier: 0

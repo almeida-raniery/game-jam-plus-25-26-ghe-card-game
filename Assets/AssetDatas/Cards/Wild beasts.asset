@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 280ad01d3d0dbdd4da908fd510c74af9, type: 3}
+  m_Name: Wild beasts
+  m_EditorClassIdentifier: Assembly-CSharp::CardData
+  isModifierCard: 0
+  cardTitle: Wild Beasts
+  cardText: You are surrounded by a pack of wild beasts
+  cardImage: {fileID: 21300000, guid: 680d556657bb2864dbb3960d96d9a037, type: 3}
+  cardBackground: {fileID: 5613690452504595799, guid: d937affbbd412ba4db06f724a644009b, type: 3}
+  cardSound: {fileID: 0}
+  cardLeftAction: {fileID: 11400000, guid: 8b584cf50b97b97488fca4bc81c597d8, type: 2}
+  cardRightAction: {fileID: 11400000, guid: 88f7c05d18a6c8744962288b0b0214f9, type: 2}

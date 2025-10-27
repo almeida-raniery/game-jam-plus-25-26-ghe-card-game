@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: TriplicateCultureBonusPointsModifier
   m_EditorClassIdentifier: Assembly-CSharp::TestModifier
   ModifierName: Illyad
-  ModifierDescription: Get 3x the amount of points for every Culture resource you
+  ModifierDescription: Get 2x the amount of points for every Culture resource you
     own.
   icon: {fileID: -3160303212785436047, guid: 113b381bbc4b1134cacb1baaab695851, type: 3}
   resourceList:
   - {fileID: 11400000, guid: 45a7525f08813354e8943662af913ba3, type: 2}
-  multiplierAmount: 3
+  multiplierAmount: 2

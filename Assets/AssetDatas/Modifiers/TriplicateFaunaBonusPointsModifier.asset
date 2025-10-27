@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: TriplicateFaunaBonusPointsModifier
   m_EditorClassIdentifier: Assembly-CSharp::TestModifier
   ModifierName: Lure
-  ModifierDescription: Get 3x the amount of points for every Fauna resource you own.
+  ModifierDescription: Get 2x the amount of points for every Fauna resource you own.
   icon: {fileID: -8552785190113407043, guid: 113b381bbc4b1134cacb1baaab695851, type: 3}
   resourceList:
   - {fileID: 11400000, guid: dd3e1199d3d71804d8e73c092bc15795, type: 2}
-  multiplierAmount: 3
+  multiplierAmount: 2

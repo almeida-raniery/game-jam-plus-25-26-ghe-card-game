@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: TriplicateFloraBonusPointsModifier
   m_EditorClassIdentifier: Assembly-CSharp::TestModifier
   ModifierName: Demeter's Boon
-  ModifierDescription: Get 3x the amount of points for every Flora resource you own.
+  ModifierDescription: Get 2x the amount of points for every Flora resource you own.
   icon: {fileID: 6785492945587094357, guid: 113b381bbc4b1134cacb1baaab695851, type: 3}
   resourceList:
   - {fileID: 11400000, guid: 3f927cc46a5f0ea4bb8046e8c7167672, type: 2}
