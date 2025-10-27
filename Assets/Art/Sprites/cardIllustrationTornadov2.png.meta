@@ -1,16 +1,10 @@
 fileFormatVersion: 2
-guid: fad4f9a0c1df3f24184038497e41260c
+guid: 95a5e65b7a60dc646aba8cf67a435174
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2732240130402796333
-    second: cardIllustrationIlhanoceu_0
-  - first:
-      213: -1103727027756904159
-    second: cardIllustrationIlhanoceu_1
-  - first:
-      213: -1866133917516897700
-    second: cardIllustrationIlhanoceu_2
+      213: 8792216242814293104
+    second: cardIllustrationTornadov2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -119,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: cardIllustrationIlhanoceu_0
+      name: cardIllustrationTornadov2_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 279
+        y: 298
         width: 480
-        height: 283
+        height: 285
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,52 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d23c9bd2ceddae520800000000000000
-      internalID: 2732240130402796333
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cardIllustrationIlhanoceu_1
-      rect:
-        serializedVersion: 2
-        x: 245
-        y: 276
-        width: 14
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1215d85bd16cea0f0800000000000000
-      internalID: -1103727027756904159
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cardIllustrationIlhanoceu_2
-      rect:
-        serializedVersion: 2
-        x: 287
-        y: 271
-        width: 9
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c52e817d6192a16e0800000000000000
-      internalID: -1866133917516897700
+      spriteID: 0749d55f61a340a70800000000000000
+      internalID: 8792216242814293104
       vertices: []
       indices: 
       edges: []
@@ -198,9 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      cardIllustrationIlhanoceu_0: 2732240130402796333
-      cardIllustrationIlhanoceu_1: -1103727027756904159
-      cardIllustrationIlhanoceu_2: -1866133917516897700
+      cardIllustrationTornadov2_0: 8792216242814293104
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

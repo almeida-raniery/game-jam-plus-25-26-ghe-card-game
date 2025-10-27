@@ -15,8 +15,8 @@ MonoBehaviour:
   isModifierCard: 0
   cardTitle: Polyphemus of Crete
   cardText: Deep in the island, the giant sleeps with his hoard of sheep
-  cardImage: {fileID: 21300000, guid: e39d65f1d7e58054bba05c61b703bdc8, type: 3}
-  cardBackground: {fileID: -7532609294062043228, guid: 317156161370a2345b1eee871ba37733, type: 3}
+  cardImage: {fileID: 21300000, guid: a72ae350322abeb4ab89e31d541f52bb, type: 3}
+  cardBackground: {fileID: -236316979797239353, guid: 43595741adf95104884c7fa59d13d2d5, type: 3}
   cardSound: {fileID: 0}
   cardLeftAction: {fileID: 11400000, guid: d6ff65ce5ca316744b97f1b268a58991, type: 2}
   cardRightAction: {fileID: 11400000, guid: 30b3de17b37502245892672884eb94af, type: 2}

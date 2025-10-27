@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: 02b4d7b799a96104584a7c2ed5a5415a
+guid: c78ac2b9146583f40a4172116f2a56f4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8709014481521486992
-    second: Coracao_0
-  - first:
-      213: -2622656659752621339
-    second: Coracao_1
+      213: -5099292496197868168
+    second: 10_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -116,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Coracao_0
+      name: 10_0
       rect:
         serializedVersion: 2
-        x: 7
-        y: 314
-        width: 439
-        height: 288
+        x: 55
+        y: 311
+        width: 425
+        height: 297
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,30 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 09c22d25782acd870800000000000000
-      internalID: 8709014481521486992
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Coracao_1
-      rect:
-        serializedVersion: 2
-        x: 441
-        y: 210
-        width: 6
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5eae1a3d9a37a9bd0800000000000000
-      internalID: -2622656659752621339
+      spriteID: 875af4eed7cab39b0800000000000000
+      internalID: -5099292496197868168
       vertices: []
       indices: 
       edges: []
@@ -173,8 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Coracao_0: 8709014481521486992
-      Coracao_1: -2622656659752621339
+      10_0: -5099292496197868168
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

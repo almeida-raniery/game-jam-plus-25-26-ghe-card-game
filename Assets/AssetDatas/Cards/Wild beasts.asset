@@ -15,7 +15,7 @@ MonoBehaviour:
   isModifierCard: 0
   cardTitle: Wild Beasts
   cardText: You are surrounded by a pack of wild beasts
-  cardImage: {fileID: 21300000, guid: 680d556657bb2864dbb3960d96d9a037, type: 3}
+  cardImage: {fileID: 21300000, guid: cb732c30075d0d54dab0315e32289fd0, type: 3}
   cardBackground: {fileID: 5613690452504595799, guid: d937affbbd412ba4db06f724a644009b, type: 3}
   cardSound: {fileID: 0}
   cardLeftAction: {fileID: 11400000, guid: 8b584cf50b97b97488fca4bc81c597d8, type: 2}

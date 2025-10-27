@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: e39d65f1d7e58054bba05c61b703bdc8
+guid: ad8a4e0e004a233448b2a5a899da3652
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7269016731734198095
-    second: Polifemo_0
+      213: 6160644282852246915
+    second: MiniCard_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Polifemo_0
+      name: MiniCard_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 301
-        width: 473
-        height: 299
+        y: 0
+        width: 37
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1b8bc9e9bc34f1b90800000000000000
-      internalID: -7269016731734198095
+      spriteID: 38503f2b5510f7550800000000000000
+      internalID: 6160644282852246915
       vertices: []
       indices: 
       edges: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Polifemo_0: -7269016731734198095
+      MiniCard_0: 6160644282852246915
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

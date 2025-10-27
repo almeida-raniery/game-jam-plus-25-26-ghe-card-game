@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 15c2ef241e970b74bbdd756cb928614c
+guid: 375d0bfb4f4834b47a68683ee961741b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4182701937404421315
-    second: Profeta_0
+      213: 3465286685962602723
+    second: 6_0
+  - first:
+      213: 6653994858678897968
+    second: 6_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -72,7 +75,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 1024
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -113,13 +116,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Profeta_0
+      name: 6_0
       rect:
         serializedVersion: 2
-        x: 55
-        y: 311
-        width: 425
-        height: 297
+        x: 7
+        y: 314
+        width: 439
+        height: 288
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +131,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3c4245c4041fb0a30800000000000000
-      internalID: 4182701937404421315
+      spriteID: 3e801b981eb271030800000000000000
+      internalID: 3465286685962602723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 6_1
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 210
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03dc4d0d11db75c50800000000000000
+      internalID: 6653994858678897968
       vertices: []
       indices: 
       edges: []
@@ -148,7 +173,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Profeta_0: 4182701937404421315
+      6_0: 3465286685962602723
+      6_1: 6653994858678897968
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

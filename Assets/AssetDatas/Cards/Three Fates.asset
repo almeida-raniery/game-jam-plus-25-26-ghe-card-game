@@ -15,7 +15,7 @@ MonoBehaviour:
   isModifierCard: 0
   cardTitle: The Fates look at you
   cardText: Will you rebel against their whim?
-  cardImage: {fileID: 21300000, guid: 680d556657bb2864dbb3960d96d9a037, type: 3}
+  cardImage: {fileID: 21300000, guid: a21a176f9159fbf4fab4815bc7ba7b33, type: 3}
   cardBackground: {fileID: 5613690452504595799, guid: d937affbbd412ba4db06f724a644009b, type: 3}
   cardSound: {fileID: 0}
   cardLeftAction: {fileID: 11400000, guid: 447cb52d3df5ac644991e9e37f1de5dd, type: 2}
